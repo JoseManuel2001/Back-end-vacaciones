@@ -1,0 +1,156 @@
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTasks.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+TypeError: Cannot read properties of undefined (reading 'horario')
+    at getHorario (C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:36:39)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:87
+    at Array.filter (<anonymous>)
+    at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:47
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
