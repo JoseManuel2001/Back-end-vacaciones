@@ -1,16 +1,23 @@
-const mysql = require ('mysql2/promise');
-const config = require ('../config.cjs');
+const sql = require("mssql");
+const config = require("../config.cjs");
 
-const pool = mysql.createPool({
-    host: config.host,
-    database: config.database,
-    user: config.user,
-    password: config.password,
-    port: config.port
+const pool = new sql.ConnectionPool({
+  user: config.user,
+  password: config.password,
+  server: config.server,
+  database: config.database,
+  port: config.port,
+  options: {
+    encrypt: false,
+    trustServerCertificate: true,
+  },
 });
 
+const poolConnect = pool.connect();
+
 const getConnection = async () => {
-    return await pool.getConnection();
+  await poolConnect;
+  return pool;
 };
 
-module.exports =  { getConnection };
+module.exports = { getConnection, sql };
