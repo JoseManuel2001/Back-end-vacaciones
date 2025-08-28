@@ -100,9 +100,8 @@ const getPassword = async (req, res) => {
 const updateUsuario = async (req, res) => {
   try {
     const { id } = req.params;
-    const { id_user, password, rol, user_name, no_nomina } = req.body;
+    const {password, rol, user_name, no_nomina } = req.body;
     if (
-        id_user === undefined ||
         password === undefined ||
         rol === undefined ||
         user_name === undefined ||
@@ -111,7 +110,6 @@ const updateUsuario = async (req, res) => {
       res.status(400).json({ message: "Bad Request. llena bien los datos" });
     } else {
       const users = {
-        id_user,
         password,
         rol,
         user_name,
@@ -131,7 +129,7 @@ const updateUsuario = async (req, res) => {
   }
 };
 
-export const updatePassword = async (req, res) => {
+const updatePassword = async (req, res) => {
   try {
     const { id } = req.params;
     const { password, current_password } = req.body;

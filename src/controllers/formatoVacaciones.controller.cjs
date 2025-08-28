@@ -13,6 +13,7 @@ const getFormatoVacaciones = async (req, res) => {
           em.fecha_ingreso, 
           em.fecha_antiguedad,
           em.estatus,
+          em.supervisor,
           us.id_user
         FROM vacaciones_sypris.usuario us
         INNER JOIN vacaciones_sypris.empleado em ON us.trabajador = em.trabajador

@@ -154,3 +154,1443 @@ TypeError: Cannot read properties of undefined (reading 'horario')
     at Array.filter (<anonymous>)
     at C:\Users\jnava\Documents\Back-sheetsProcess\src\cronTasks\cronTaskR8.cjs:46:47
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+28-08-2025 09:55:55: (node:19784) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:55: (node:12992) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:55: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:55: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:55: ^^^^^^
+28-08-2025 09:55:55: 
+28-08-2025 09:55:55: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:55:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:55:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:55:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:55:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:55:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:55:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:55:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:55:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:55:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:55:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:55: (node:18396) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:55: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:55: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:55: ^^^^^^
+28-08-2025 09:55:55: 
+28-08-2025 09:55:55: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:55:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:55:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:55:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:55:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:55:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:55:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:55:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:55:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:55:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:55:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:55: 
+28-08-2025 09:55:55: Node.js v22.16.0
+28-08-2025 09:55:55: (node:16956) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:55: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:55: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:55: ^^^^^^
+28-08-2025 09:55:55: 
+28-08-2025 09:55:55: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:55:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:55:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:55:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:55:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:55:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:55:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:55:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:55:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:55:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:55:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:55: 
+28-08-2025 09:55:55: Node.js v22.16.0
+28-08-2025 09:55:55: (node:19080) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:55: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:55: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:55: ^^^^^^
+28-08-2025 09:55:55: 
+28-08-2025 09:55:55: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:55:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:55:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:55:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:55:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:55:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:55:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:55:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:55:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:55:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:55:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:55: 
+28-08-2025 09:55:55: Node.js v22.16.0
+28-08-2025 09:55:55: (node:19700) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:55: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:55: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:55: ^^^^^^
+28-08-2025 09:55:55: 
+28-08-2025 09:55:55: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:55:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:55:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:55:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:55:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:55:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:55:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:55:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:55:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:55:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:55:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:55: 
+28-08-2025 09:55:55: Node.js v22.16.0
+28-08-2025 09:55:55: (node:22412) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:55: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:55: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:55: ^^^^^^
+28-08-2025 09:55:55: 
+28-08-2025 09:55:55: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:55:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:55:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:55:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:55:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:55:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:55:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:55:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:55:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:55:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:55:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:55: 
+28-08-2025 09:55:55: Node.js v22.16.0
+28-08-2025 09:55:55: 
+28-08-2025 09:55:55: Node.js v22.16.0
+28-08-2025 09:55:55: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:55: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:55: ^^^^^^
+28-08-2025 09:55:55: 
+28-08-2025 09:55:55: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:55:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:55:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:55:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:55:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:55:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:55:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:55:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:55:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:55:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:55:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:55: 
+28-08-2025 09:55:55: Node.js v22.16.0
+28-08-2025 09:55:55: (node:23796) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:55: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:55: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:55: ^^^^^^
+28-08-2025 09:55:55: 
+28-08-2025 09:55:55: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:55:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:55:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:55:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:55:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:55:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:55:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:55:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:55:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:55:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:55:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:55: 
+28-08-2025 09:55:55: Node.js v22.16.0
+28-08-2025 09:55:57: (node:21312) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:57: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:57: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:57: ^^^^^^
+28-08-2025 09:55:57: 
+28-08-2025 09:55:57: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:57:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:57:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:57:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:57:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:57:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:57:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:57:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:57:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:57:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:57:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:57: 
+28-08-2025 09:55:57: Node.js v22.16.0
+28-08-2025 09:55:57: (node:2760) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:57: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:57: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:57: ^^^^^^
+28-08-2025 09:55:57: 
+28-08-2025 09:55:57: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:57:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:57:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:57:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:57:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:57:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:57:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:57:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:57:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:57:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:57:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:57: 
+28-08-2025 09:55:57: Node.js v22.16.0
+28-08-2025 09:55:57: (node:12404) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:57: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:57: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:57: ^^^^^^
+28-08-2025 09:55:57: 
+28-08-2025 09:55:57: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:57:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:57:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:57:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:57:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:57:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:57:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:57:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:57:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:57:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:57:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:57: 
+28-08-2025 09:55:57: Node.js v22.16.0
+28-08-2025 09:55:57: (node:17576) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:57: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:57: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:57: ^^^^^^
+28-08-2025 09:55:57: 
+28-08-2025 09:55:57: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:57:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:57:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:57:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:57:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:57:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:57:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:57:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:57:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:57:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:57:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:57: 
+28-08-2025 09:55:57: Node.js v22.16.0
+28-08-2025 09:55:57: (node:22652) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:57: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:57: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:57: ^^^^^^
+28-08-2025 09:55:57: 
+28-08-2025 09:55:57: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:57:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:57:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:57:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:57:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:57:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:57:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:57:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:57:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:57:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:57:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:57: 
+28-08-2025 09:55:57: Node.js v22.16.0
+28-08-2025 09:55:57: (node:12372) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:57: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:57: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:57: ^^^^^^
+28-08-2025 09:55:57: 
+28-08-2025 09:55:57: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:57:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:57:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:57:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:57:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:57:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:57:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:57:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:57:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:57:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:57:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:57: 
+28-08-2025 09:55:57: Node.js v22.16.0
+28-08-2025 09:55:57: (node:17032) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:57: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:57: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:57: ^^^^^^
+28-08-2025 09:55:57: 
+28-08-2025 09:55:57: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:57:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:57:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:57:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:57:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:57:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:57:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:57:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:57:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:57:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:57:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:57: 
+28-08-2025 09:55:57: Node.js v22.16.0
+28-08-2025 09:55:57: (node:16100) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:57: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:57: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:57: ^^^^^^
+28-08-2025 09:55:57: 
+28-08-2025 09:55:57: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:57:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:57:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:57:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:57:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:57:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:57:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:57:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:57:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:57:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:57:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:57: 
+28-08-2025 09:55:57: Node.js v22.16.0
+28-08-2025 09:55:59: (node:12960) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:59: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:59: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:59: ^^^^^^
+28-08-2025 09:55:59: 
+28-08-2025 09:55:59: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:59:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:59:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:59:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:59:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:59:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:59:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:59:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:59:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:59:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:59:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:59: 
+28-08-2025 09:55:59: Node.js v22.16.0
+28-08-2025 09:55:59: (node:10832) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:59: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:59: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:59: ^^^^^^
+28-08-2025 09:55:59: 
+28-08-2025 09:55:59: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:59:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:59:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:59:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:59:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:59:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:59:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:59:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:59:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:59:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:59:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:59: 
+28-08-2025 09:55:59: Node.js v22.16.0
+28-08-2025 09:55:59: (node:976) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:59: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:59: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:59: ^^^^^^
+28-08-2025 09:55:59: 
+28-08-2025 09:55:59: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:59:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:59:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:59:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:59:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:59:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:59:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:59:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:59:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:59:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:59:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:59: 
+28-08-2025 09:55:59: Node.js v22.16.0
+28-08-2025 09:55:59: (node:1056) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:59: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:59: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:59: ^^^^^^
+28-08-2025 09:55:59: 
+28-08-2025 09:55:59: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:59:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:59:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:59:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:59:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:59:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:59:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:59:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:59:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:59:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:59:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:59: 
+28-08-2025 09:55:59: Node.js v22.16.0
+28-08-2025 09:55:59: (node:13600) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:59: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:59: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:59: ^^^^^^
+28-08-2025 09:55:59: 
+28-08-2025 09:55:59: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:59:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:59:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:59:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:59:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:59:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:59:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:59:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:59:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:59:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:59:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:59: 
+28-08-2025 09:55:59: Node.js v22.16.0
+28-08-2025 09:55:59: (node:10420) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:59: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:59: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:59: ^^^^^^
+28-08-2025 09:55:59: 
+28-08-2025 09:55:59: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:59:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:59:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:59:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:59:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:59:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:59:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:59:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:59:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:59:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:59:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:59: 
+28-08-2025 09:55:59: Node.js v22.16.0
+28-08-2025 09:55:59: (node:5092) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:59: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:59: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:59: ^^^^^^
+28-08-2025 09:55:59: 
+28-08-2025 09:55:59: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:59:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:59:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:59:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:59:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:59:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:59:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:59:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:59:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:59:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:59:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:59: 
+28-08-2025 09:55:59: Node.js v22.16.0
+28-08-2025 09:55:59: (node:14328) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:55:59: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:55:59: export const updatePassword = async (req, res) => {
+28-08-2025 09:55:59: ^^^^^^
+28-08-2025 09:55:59: 
+28-08-2025 09:55:59: SyntaxError: Unexpected token 'export'
+28-08-2025 09:55:59:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:55:59:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:55:59:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:55:59:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:55:59:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:55:59:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:55:59:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:55:59:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:55:59:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:55:59:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:55:59: 
+28-08-2025 09:55:59: Node.js v22.16.0
+28-08-2025 09:56:01: (node:4196) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:01: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:01: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:01: ^^^^^^
+28-08-2025 09:56:01: 
+28-08-2025 09:56:01: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:01:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:01:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:01:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:01:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:01:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:01:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:01:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:01:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:01:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:01:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:01: 
+28-08-2025 09:56:01: Node.js v22.16.0
+28-08-2025 09:56:01: (node:20992) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:01: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:01: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:01: ^^^^^^
+28-08-2025 09:56:01: 
+28-08-2025 09:56:01: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:01:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:01:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:01:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:01:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:01:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:01:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:01:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:01:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:01:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:01:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:01: 
+28-08-2025 09:56:01: Node.js v22.16.0
+28-08-2025 09:56:01: (node:23132) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:01: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:01: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:01: ^^^^^^
+28-08-2025 09:56:01: 
+28-08-2025 09:56:01: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:01:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:01:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:01:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:01:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:01:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:01:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:01:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:01:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:01:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:01:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:01: 
+28-08-2025 09:56:01: Node.js v22.16.0
+28-08-2025 09:56:01: (node:7492) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:01: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:01: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:01: ^^^^^^
+28-08-2025 09:56:01: 
+28-08-2025 09:56:01: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:01:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:01:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:01:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:01:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:01:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:01:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:01:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:01:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:01:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:01:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:01: 
+28-08-2025 09:56:01: Node.js v22.16.0
+28-08-2025 09:56:01: (node:5800) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:01: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:01: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:01: ^^^^^^
+28-08-2025 09:56:01: 
+28-08-2025 09:56:01: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:01:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:01:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:01:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:01:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:01:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:01:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:01:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:01:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:01:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:01:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:01: 
+28-08-2025 09:56:01: Node.js v22.16.0
+28-08-2025 09:56:01: (node:20820) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:01: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:01: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:01: ^^^^^^
+28-08-2025 09:56:01: 
+28-08-2025 09:56:01: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:01:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:01:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:01:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:01:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:01:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:01:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:01:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:01:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:01:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:01:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:01: 
+28-08-2025 09:56:01: Node.js v22.16.0
+28-08-2025 09:56:01: (node:12636) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:01: (node:2868) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:01: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:01: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:01: ^^^^^^
+28-08-2025 09:56:01: 
+28-08-2025 09:56:01: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:01:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:01:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:01:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:01:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:01:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:01:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:01:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:01:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:01:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:01:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:01: 
+28-08-2025 09:56:01: Node.js v22.16.0
+28-08-2025 09:56:01: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:01: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:01: ^^^^^^
+28-08-2025 09:56:01: 
+28-08-2025 09:56:01: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:01:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:01:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:01:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:01:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:01:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:01:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:01:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:01:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:01:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:01:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:01: 
+28-08-2025 09:56:01: Node.js v22.16.0
+28-08-2025 09:56:03: (node:18484) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:03: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:03: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:03: ^^^^^^
+28-08-2025 09:56:03: 
+28-08-2025 09:56:03: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:03:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:03:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:03:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:03:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:03:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:03:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:03:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:03:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:03:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:03:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:03: 
+28-08-2025 09:56:03: Node.js v22.16.0
+28-08-2025 09:56:03: (node:20608) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:03: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:03: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:03: ^^^^^^
+28-08-2025 09:56:03: 
+28-08-2025 09:56:03: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:03:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:03:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:03:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:03:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:03:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:03:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:03:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:03:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:03:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:03:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:03: 
+28-08-2025 09:56:03: Node.js v22.16.0
+28-08-2025 09:56:03: (node:16868) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:03: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:03: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:03: ^^^^^^
+28-08-2025 09:56:03: 
+28-08-2025 09:56:03: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:03:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:03:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:03:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:03:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:03:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:03:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:03:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:03:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:03:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:03:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:03: 
+28-08-2025 09:56:03: Node.js v22.16.0
+28-08-2025 09:56:03: (node:3012) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:03: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:03: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:03: ^^^^^^
+28-08-2025 09:56:03: 
+28-08-2025 09:56:03: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:03:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:03:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:03:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:03:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:03:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:03:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:03:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:03:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:03:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:03:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:03: 
+28-08-2025 09:56:03: Node.js v22.16.0
+28-08-2025 09:56:03: (node:14124) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:03: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:03: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:03: ^^^^^^
+28-08-2025 09:56:03: 
+28-08-2025 09:56:03: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:03:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:03:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:03:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:03:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:03:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:03:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:03:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:03:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:03:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:03:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:03: 
+28-08-2025 09:56:03: Node.js v22.16.0
+28-08-2025 09:56:03: (node:1296) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:03: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:03: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:03: ^^^^^^
+28-08-2025 09:56:03: 
+28-08-2025 09:56:03: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:03:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:03:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:03:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:03:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:03:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:03:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:03:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:03:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:03:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:03:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:03: 
+28-08-2025 09:56:03: Node.js v22.16.0
+28-08-2025 09:56:03: (node:19464) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:03: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:03: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:03: ^^^^^^
+28-08-2025 09:56:03: 
+28-08-2025 09:56:03: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:03:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:03:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:03:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:03:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:03:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:03:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:03:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:03:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:03:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:03:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:03: 
+28-08-2025 09:56:03: Node.js v22.16.0
+28-08-2025 09:56:03: (node:16736) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:03: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:03: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:03: ^^^^^^
+28-08-2025 09:56:03: 
+28-08-2025 09:56:03: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:03:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:03:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:03:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:03:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:03:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:03:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:03:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:03:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:03:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:03:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:03: 
+28-08-2025 09:56:03: Node.js v22.16.0
+28-08-2025 09:56:05: (node:17596) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:05: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:05: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:05: ^^^^^^
+28-08-2025 09:56:05: 
+28-08-2025 09:56:05: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:05:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:05:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:05:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:05:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:05:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:05:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:05:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:05:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:05:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:05:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:05: 
+28-08-2025 09:56:05: Node.js v22.16.0
+28-08-2025 09:56:06: (node:2496) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:06: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:06: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:06: ^^^^^^
+28-08-2025 09:56:06: 
+28-08-2025 09:56:06: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:06:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:06:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:06:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:06:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:06:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:06:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:06:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:06:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:06:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:06:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:06: 
+28-08-2025 09:56:06: Node.js v22.16.0
+28-08-2025 09:56:06: (node:20408) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:06: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:06: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:06: ^^^^^^
+28-08-2025 09:56:06: 
+28-08-2025 09:56:06: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:06:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:06:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:06:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:06:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:06:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:06:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:06:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:06:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:06:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:06:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:06: 
+28-08-2025 09:56:06: Node.js v22.16.0
+28-08-2025 09:56:06: (node:20056) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:06: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:06: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:06: ^^^^^^
+28-08-2025 09:56:06: 
+28-08-2025 09:56:06: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:06:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:06:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:06:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:06:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:06:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:06:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:06:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:06:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:06:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:06:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:06: 
+28-08-2025 09:56:06: Node.js v22.16.0
+28-08-2025 09:56:06: (node:23376) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:06: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:06: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:06: ^^^^^^
+28-08-2025 09:56:06: 
+28-08-2025 09:56:06: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:06:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:06:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:06:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:06:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:06:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:06:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:06:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:06:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:06:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:06:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:06: 
+28-08-2025 09:56:06: Node.js v22.16.0
+28-08-2025 09:56:06: (node:20380) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:06: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:06: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:06: ^^^^^^
+28-08-2025 09:56:06: 
+28-08-2025 09:56:06: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:06:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:06:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:06:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:06:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:06:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:06:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:06:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:06:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:06:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:06:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:06: 
+28-08-2025 09:56:06: Node.js v22.16.0
+28-08-2025 09:56:06: (node:12472) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:06: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:06: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:06: ^^^^^^
+28-08-2025 09:56:06: 
+28-08-2025 09:56:06: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:06:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:06:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:06:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:06:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:06:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:06:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:06:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:06:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:06:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:06:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:06: 
+28-08-2025 09:56:06: Node.js v22.16.0
+28-08-2025 09:56:06: (node:19960) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:06: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:06: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:06: ^^^^^^
+28-08-2025 09:56:06: 
+28-08-2025 09:56:06: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:06:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:06:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:06:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:06:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:06:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:06:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:06:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:06:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:06:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:06:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:06: 
+28-08-2025 09:56:06: Node.js v22.16.0
+28-08-2025 09:56:08: (node:19900) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:08: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:08: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:08: ^^^^^^
+28-08-2025 09:56:08: 
+28-08-2025 09:56:08: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:08:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:08:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:08:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:08:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:08:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:08:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:08:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:08:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:08:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:08:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:08: 
+28-08-2025 09:56:08: Node.js v22.16.0
+28-08-2025 09:56:08: (node:14260) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:08: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:08: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:08: ^^^^^^
+28-08-2025 09:56:08: 
+28-08-2025 09:56:08: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:08:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:08:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:08:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:08:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:08:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:08:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:08:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:08:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:08:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:08:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:08: 
+28-08-2025 09:56:08: Node.js v22.16.0
+28-08-2025 09:56:08: (node:17184) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:08: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:08: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:08: ^^^^^^
+28-08-2025 09:56:08: 
+28-08-2025 09:56:08: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:08:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:08:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:08:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:08:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:08:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:08:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:08:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:08:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:08:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:08:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:08: 
+28-08-2025 09:56:08: Node.js v22.16.0
+28-08-2025 09:56:08: (node:14268) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:08: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:08: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:08: ^^^^^^
+28-08-2025 09:56:08: 
+28-08-2025 09:56:08: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:08:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:08:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:08:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:08:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:08:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:08:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:08:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:08:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:08:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:08:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:08: 
+28-08-2025 09:56:08: Node.js v22.16.0
+28-08-2025 09:56:09: (node:15768) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:09: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:09: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:09: ^^^^^^
+28-08-2025 09:56:09: 
+28-08-2025 09:56:09: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:09:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:09:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:09:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:09:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:09:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:09:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:09:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:09:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:09:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:09:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:09: 
+28-08-2025 09:56:09: Node.js v22.16.0
+28-08-2025 09:56:09: (node:21000) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:09: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:09: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:09: ^^^^^^
+28-08-2025 09:56:09: 
+28-08-2025 09:56:09: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:09:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:09:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:09:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:09:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:09:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:09:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:09:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:09:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:09:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:09:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:09: 
+28-08-2025 09:56:09: Node.js v22.16.0
+28-08-2025 09:56:09: (node:13004) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:09: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:09: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:09: ^^^^^^
+28-08-2025 09:56:09: 
+28-08-2025 09:56:09: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:09:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:09:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:09:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:09:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:09:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:09:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:09:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:09:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:09:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:09:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:09: 
+28-08-2025 09:56:09: Node.js v22.16.0
+28-08-2025 09:56:09: (node:6336) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:09: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:09: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:09: ^^^^^^
+28-08-2025 09:56:09: 
+28-08-2025 09:56:09: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:09:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:09:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:09:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:09:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:09:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:09:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:09:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:09:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:09:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:09:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:09: 
+28-08-2025 09:56:09: Node.js v22.16.0
+28-08-2025 09:56:11: (node:18756) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:11: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:11: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:11: ^^^^^^
+28-08-2025 09:56:11: 
+28-08-2025 09:56:11: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:11:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:11:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:11:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:11:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:11:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:11:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:11:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:11:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:11:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:11:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:11: 
+28-08-2025 09:56:11: Node.js v22.16.0
+28-08-2025 09:56:11: (node:14560) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:11: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:11: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:11: ^^^^^^
+28-08-2025 09:56:11: 
+28-08-2025 09:56:11: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:11:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:11:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:11:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:11:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:11:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:11:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:11:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:11:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:11:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:11:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:11: 
+28-08-2025 09:56:11: Node.js v22.16.0
+28-08-2025 09:56:11: (node:17444) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:11: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:11: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:11: ^^^^^^
+28-08-2025 09:56:11: 
+28-08-2025 09:56:11: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:11:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:11:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:11:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:11:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:11:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:11:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:11:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:11:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:11:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:11:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:11: 
+28-08-2025 09:56:11: Node.js v22.16.0
+28-08-2025 09:56:11: (node:4484) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:11: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:11: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:11: ^^^^^^
+28-08-2025 09:56:11: 
+28-08-2025 09:56:11: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:11:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:11:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:11:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:11:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:11:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:11:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:11:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:11:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:11:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:11:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:11: 
+28-08-2025 09:56:11: Node.js v22.16.0
+28-08-2025 09:56:11: (node:23364) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:11: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:11: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:11: ^^^^^^
+28-08-2025 09:56:11: 
+28-08-2025 09:56:11: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:11:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:11:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:11:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:11:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:11:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:11:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:11:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:11:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:11:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:11:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:11: 
+28-08-2025 09:56:11: Node.js v22.16.0
+28-08-2025 09:56:11: (node:5236) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:11: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:11: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:11: ^^^^^^
+28-08-2025 09:56:11: 
+28-08-2025 09:56:11: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:11:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:11:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:11:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:11:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:11:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:11:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:11:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:11:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:11:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:11:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:11: 
+28-08-2025 09:56:11: Node.js v22.16.0
+28-08-2025 09:56:11: (node:24044) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:11: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:11: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:11: ^^^^^^
+28-08-2025 09:56:11: 
+28-08-2025 09:56:11: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:11:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:11:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:11:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:11:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:11:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:11:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:11:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:11:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:11:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:11:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:11: 
+28-08-2025 09:56:11: Node.js v22.16.0
+28-08-2025 09:56:11: (node:19036) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:11: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:11: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:11: ^^^^^^
+28-08-2025 09:56:11: 
+28-08-2025 09:56:11: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:11:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:11:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:11:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:11:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:11:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:11:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:11:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:11:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:11:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:11:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:11: 
+28-08-2025 09:56:11: Node.js v22.16.0
+28-08-2025 09:56:15: (node:15032) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:15: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:15: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:15: ^^^^^^
+28-08-2025 09:56:15: 
+28-08-2025 09:56:15: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:15:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:15:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:15:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:15:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:15:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:15:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:15:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:15:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:15:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:15:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:15: 
+28-08-2025 09:56:15: Node.js v22.16.0
+28-08-2025 09:56:15: (node:16200) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:15: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:15: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:15: ^^^^^^
+28-08-2025 09:56:15: 
+28-08-2025 09:56:15: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:15:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:15:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:15:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:15:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:15:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:15:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:15:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:15:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:15:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:15:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:15: 
+28-08-2025 09:56:15: Node.js v22.16.0
+28-08-2025 09:56:15: (node:14276) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:15: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:15: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:15: ^^^^^^
+28-08-2025 09:56:15: 
+28-08-2025 09:56:15: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:15:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:15:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:15:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:15:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:15:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:15:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:15:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:15:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:15:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:15:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:15: 
+28-08-2025 09:56:15: Node.js v22.16.0
+28-08-2025 09:56:15: (node:14716) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:15: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:15: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:15: ^^^^^^
+28-08-2025 09:56:15: 
+28-08-2025 09:56:15: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:15:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:15:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:15:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:15:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:15:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:15:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:15:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:15:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:15:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:15:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:15: 
+28-08-2025 09:56:15: Node.js v22.16.0
+28-08-2025 09:56:15: (node:18440) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:16: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:16: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:16: ^^^^^^
+28-08-2025 09:56:16: 
+28-08-2025 09:56:16: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:16:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:16:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:16:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:16:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:16:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:16:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:16:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:16:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:16:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:16:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:16: 
+28-08-2025 09:56:16: Node.js v22.16.0
+28-08-2025 09:56:16: (node:20812) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:16: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:16: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:16: ^^^^^^
+28-08-2025 09:56:16: 
+28-08-2025 09:56:16: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:16:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:16:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:16:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:16:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:16:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:16:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:16:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:16:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:16:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:16:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:16: 
+28-08-2025 09:56:16: Node.js v22.16.0
+28-08-2025 09:56:16: (node:12104) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:16: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:16: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:16: ^^^^^^
+28-08-2025 09:56:16: 
+28-08-2025 09:56:16: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:16:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:16:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:16:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:16:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:16:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:16:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:16:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:16:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:16:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:16:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:16: 
+28-08-2025 09:56:16: Node.js v22.16.0
+28-08-2025 09:56:16: (node:13688) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:16: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:16: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:16: ^^^^^^
+28-08-2025 09:56:16: 
+28-08-2025 09:56:16: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:16:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:16:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:16:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:16:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:16:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:16:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:16:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:16:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:16:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:16:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:16: 
+28-08-2025 09:56:16: Node.js v22.16.0
+28-08-2025 09:56:18: (node:21520) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:18: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:18: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:18: ^^^^^^
+28-08-2025 09:56:18: 
+28-08-2025 09:56:18: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:18:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:18:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:18:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:18:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:18:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:18:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:18:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:18:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:18:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:18:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:18: 
+28-08-2025 09:56:18: Node.js v22.16.0
+28-08-2025 09:56:18: (node:22848) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:18: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:18: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:18: ^^^^^^
+28-08-2025 09:56:18: 
+28-08-2025 09:56:18: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:18:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:18:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:18:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:18:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:18:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:18:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:18:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:18:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:18:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:18:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:18: 
+28-08-2025 09:56:18: Node.js v22.16.0
+28-08-2025 09:56:18: (node:16792) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:18: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:18: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:18: ^^^^^^
+28-08-2025 09:56:18: 
+28-08-2025 09:56:18: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:18:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:18:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:18:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:18:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:18:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:18:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:18:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:18:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:18:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:18:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:18: 
+28-08-2025 09:56:18: Node.js v22.16.0
+28-08-2025 09:56:18: (node:23812) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:18: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:18: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:18: ^^^^^^
+28-08-2025 09:56:18: 
+28-08-2025 09:56:18: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:18:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:18:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:18:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:18:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:18:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:18:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:18:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:18:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:18:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:18:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:18: 
+28-08-2025 09:56:18: Node.js v22.16.0
+28-08-2025 09:56:19: (node:23864) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:19: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:19: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:19: ^^^^^^
+28-08-2025 09:56:19: 
+28-08-2025 09:56:19: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:19:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:19:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:19:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:19:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:19:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:19:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:19:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:19:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:19:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:19:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:19: 
+28-08-2025 09:56:19: Node.js v22.16.0
+28-08-2025 09:56:19: (node:23980) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:19: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:19: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:19: ^^^^^^
+28-08-2025 09:56:19: 
+28-08-2025 09:56:19: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:19:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:19:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:19:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:19:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:19:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:19:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:19:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:19:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:19:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:19:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:19: 
+28-08-2025 09:56:19: Node.js v22.16.0
+28-08-2025 09:56:19: (node:15688) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:19: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:19: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:19: ^^^^^^
+28-08-2025 09:56:19: 
+28-08-2025 09:56:19: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:19:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:19:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:19:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:19:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:19:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:19:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:19:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:19:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:19:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:19:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:19: 
+28-08-2025 09:56:19: Node.js v22.16.0
+28-08-2025 09:56:19: (node:17992) Warning: Failed to load the ES module: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs. Make sure to set "type": "module" in the nearest package.json file or use the .mjs extension.
+28-08-2025 09:56:19: C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\controllers\usuarios.controller.cjs:134
+28-08-2025 09:56:19: export const updatePassword = async (req, res) => {
+28-08-2025 09:56:19: ^^^^^^
+28-08-2025 09:56:19: 
+28-08-2025 09:56:19: SyntaxError: Unexpected token 'export'
+28-08-2025 09:56:19:     at wrapSafe (node:internal/modules/cjs/loader:1662:18)
+28-08-2025 09:56:19:     at Module._compile (node:internal/modules/cjs/loader:1704:20)
+28-08-2025 09:56:19:     at Object..js (node:internal/modules/cjs/loader:1895:10)
+28-08-2025 09:56:19:     at Module.load (node:internal/modules/cjs/loader:1465:32)
+28-08-2025 09:56:19:     at Function._load (node:internal/modules/cjs/loader:1282:12)
+28-08-2025 09:56:19:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+28-08-2025 09:56:19:     at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+28-08-2025 09:56:19:     at Module.require (node:internal/modules/cjs/loader:1487:12)
+28-08-2025 09:56:19:     at require (node:internal/modules/helpers:135:16)
+28-08-2025 09:56:19:     at Object.<anonymous> (C:\Users\psistemas\Documents\GitHub\BackEnd-VacacionesS\Back-end-vacaciones\src\routes\Usuarios.routes.cjs:3:3)
+28-08-2025 09:56:19: 
+28-08-2025 09:56:19: Node.js v22.16.0
