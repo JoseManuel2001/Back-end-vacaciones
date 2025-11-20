@@ -104,33 +104,38 @@ const updateEmpleado = async (req, res) => {
   try {
     const { id } = req.params;
     console.log("Trabajador a actualizar:", id);
-    const { fecha_ingreso, nombre, fecha_antiguedad, centro_costos, estatus, supervisor, tipo } =
+    const { fecha_antiguedad, nombre, centro_costos, estatus, supervisor, tipo, correo } =
       req.body;
+      console.log("Datos recibidos para actualizar:", req.body);
     const pool = await getConnection();
     const result = await pool
       .request()
       .input("id", sql.VarChar, id)
-      .input("fecha_ingreso", sql.VarChar, fecha_ingreso)
-      .input("nombre", sql.VarChar, nombre)
       .input("fecha_antiguedad", sql.VarChar, fecha_antiguedad)
+      .input("nombre", sql.VarChar, nombre)
       .input("centro_costos", sql.VarChar, centro_costos)
       .input("estatus", sql.Int, estatus)
       .input("supervisor", sql.VarChar, supervisor)
       .input("tipo", sql.VarChar, tipo)
+      .input("correo", sql.VarChar, correo)
       .query(`
     UPDATE vacaciones_sypris.empleado
     SET 
-      fecha_ingreso = @fecha_ingreso,
-      nombre = @nombre,
       fecha_antiguedad = @fecha_antiguedad,
+      nombre = @nombre,
       centro_costos = @centro_costos,
       estatus = @estatus,
       supervisor = @supervisor,
-      tipo = @tipo
+      tipo = @tipo,
+      correo = @correo
     WHERE trabajador = @id
   `);
-
-    res.json(result);
+    res.json({
+      message: "Empleado actualizado",
+      data: req.body,
+      result: result
+    });
+    console.log(result);
   } catch (error) {
     res.status(500).send(error.message);
   }

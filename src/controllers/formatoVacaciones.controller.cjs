@@ -7,7 +7,6 @@ const getFormatoVacaciones = async (req, res) => {
         SELECT 
           us.trabajador, 
           us.rol, 
-          us.user_name, 
           em.nombre, 
           em.centro_costos,
           em.fecha_ingreso, 

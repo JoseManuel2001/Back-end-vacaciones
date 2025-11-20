@@ -126,6 +126,21 @@ const updateSaldo = async (req, res) => {
   }
 };
 
+const getReporteSaldos = async (req, res) => {
+  try {
+    const pool = await getConnection();
+    const result = await pool
+      .request()
+      .query(`SELECT emp.trabajador, emp.nombre, emp.centro_costos, s.ano, s.dias_totales, s.dias_confirmados, s.dias_tentativos 
+        FROM vacaciones_sypris.empleado AS emp 
+        JOIN vacaciones_sypris.saldo AS s 
+        ON emp.trabajador = s.nomina WHERE s.dias_totales <> 0`);
+    res.json(result.recordset);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+};
+
 module.exports = {
   methods: {
     getSaldo,
@@ -133,5 +148,6 @@ module.exports = {
     addSaldo,
     deleteSaldo,
     updateSaldo,
+    getReporteSaldos,
   },
 };

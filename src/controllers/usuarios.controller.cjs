@@ -31,14 +31,14 @@ const addUsuario = async (req, res) => {
     const {
       password,
       rol,
-      user_name,
+      nombre,
       trabajador,
     } = req.body;
 
     if (
       password === undefined ||
       rol === undefined ||
-      user_name === undefined ||
+      nombre === undefined ||
       trabajador === undefined
     ) {
       return res
@@ -51,12 +51,12 @@ const addUsuario = async (req, res) => {
       .request()
       .input("password", sql.NVarChar, password)
       .input("rol", sql.NVarChar, rol)
-      .input("user_name", sql.NVarChar, user_name)
+      .input("nombre", sql.NVarChar, nombre)
       .input("trabajador", sql.NVarChar, trabajador).query(`
     INSERT INTO vacaciones_sypris.usuario
-    (password, rol, user_name, trabajador)
+    (password, rol, nombre, trabajador)
     VALUES
-    (@password, @rol, @user_name, @trabajador)
+    (@password, @rol, @nombre, @trabajador)
   `);
 
     res.json({ message: "Usuario creado" });
@@ -100,32 +100,33 @@ const getPassword = async (req, res) => {
 const updateUsuario = async (req, res) => {
   try {
     const { id } = req.params;
-    const {password, rol, user_name, no_nomina } = req.body;
-    if (
-        password === undefined ||
-        rol === undefined ||
-        user_name === undefined ||
-        no_nomina === undefined
-    ) {
-      res.status(400).json({ message: "Bad Request. llena bien los datos" });
-    } else {
-      const users = {
-        password,
-        rol,
-        user_name,
-        no_nomina,
-      };
-      const connection = await getConnection();
-      const result = await connection.query(
-        "UPDATE usuario SET ? WHERE id_user = ?",
-        [users, id]
-      );
-      res.json(result);
-      connection.release();
-    }
+    console.log("Usuario a actualizar:", id);
+    const {
+      nombre,
+      trabajador,
+      password,
+      rol,
+    } = req.body;
+    const pool = await getConnection();
+    const result = await pool
+      .request()
+      .input("id", sql.Int, id)
+      .input("nombre", sql.VarChar, nombre)
+      .input("trabajador", sql.VarChar, trabajador)
+      .input("password", sql.VarChar, password)
+      .input("rol", sql.VarChar, rol)
+      .query(`
+    UPDATE vacaciones_sypris.usuario
+    SET 
+      nombre = @nombre,
+      trabajador = @trabajador,
+      password = @password,
+      rol = @rol
+    WHERE id_user = @id
+  `);
+    res.json(result);
   } catch (error) {
-    res.status(500);
-    res.send(error.message);
+    res.status(500).send(error.message);
   }
 };
 
