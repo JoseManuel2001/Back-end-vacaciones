@@ -8,6 +8,7 @@ const router = Router();
 router.get("/", usuarioController.getUsuario);
 router.get("/:trabajador", usuarioController.getOneUsuario);
 router.get("/password/:id_user", usuarioController.getPassword);
+router.get("/rh/lista", usuarioController.getUsuariosRH);
 
 //POST
 router.post("/", usuarioController.addUsuario);

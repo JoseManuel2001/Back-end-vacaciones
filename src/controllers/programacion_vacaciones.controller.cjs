@@ -130,6 +130,7 @@ const updateProgVac = async (req, res) => {
       nombre_aprobado_rh,
       nombre_aprobado_sup
     } = req.body;
+    console.log("Datos para actualizar:", req.body);
 
     const pool = await getConnection();
     const result = await pool

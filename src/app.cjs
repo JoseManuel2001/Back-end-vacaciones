@@ -9,6 +9,7 @@ const programacion_Vacaciones = require('./routes/programacion_vacaciones.cjs');
 const Saldo = require('./routes/Saldo.router.cjs');
 const tablaGobierno = require('./routes/tablaGobierno.routes.cjs');
 const usuario = require('./routes/Usuarios.routes.cjs');
+const banco = require('./routes/banco.routes.cjs');
 const app = express();
 
 //habilitar cors
@@ -37,6 +38,7 @@ app.use("/vacaciones/Saldo", Saldo);
 app.use("/vacaciones/programacion_vacaciones", programacion_Vacaciones)
 app.use("/vacaciones/tablaGobierno", tablaGobierno);
 app.use("/vacaciones/usuario", usuario);
+app.use("/vacaciones/banco", banco);
 
 // Programar tarea para ejecutarse a los 30 minutos de cada hora
 

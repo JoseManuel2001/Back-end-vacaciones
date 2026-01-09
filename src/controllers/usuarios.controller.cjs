@@ -70,7 +70,7 @@ const deleteUsuario = async (req, res) => {
     const { id } = req.params;
     const connection = await getConnection();
     const result = await connection.query(
-      "DELETE FROM usuario WHERE id_user = ?",
+      "DELETE FROM usuario WHERE id_user = ?", 
       id
     );
     res.json(result);
@@ -197,7 +197,25 @@ const updatePassword = async (req, res) => {
   }
 };
 
-
+const getUsuariosRH = async (req, res) => {
+  try {
+    const pool = await getConnection();
+    const result = await pool
+      .request()
+      .query(`SELECT 
+              u.trabajador,
+              u.rol,
+              e.nombre,
+              e.correo
+              FROM vacaciones_sypris.usuario u
+              INNER JOIN vacaciones_sypris.empleado e 
+              ON u.trabajador = e.trabajador
+              WHERE u.rol = 'RH' OR u.rol = 'SupervisorRH'`);
+    res.json(result.recordset);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+};
 
 module.exports = {
   methods: {
@@ -208,5 +226,6 @@ module.exports = {
     updateUsuario,
     updatePassword,
     getPassword,
+    getUsuariosRH,
   },
 };
