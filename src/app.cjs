@@ -43,9 +43,9 @@ app.use("/vacaciones/programacion_vacaciones", programacion_Vacaciones)
 app.use("/vacaciones/tablaGobierno", tablaGobierno);
 app.use("/vacaciones/usuario", usuario);
 app.use("/vacaciones/banco", banco);
-app.use("/api/periodos", periodos);
-app.use("/api/evaluaciones", evaluaciones);
-app.use("/api/objetivos", objetivos);
+app.use("/eva_desempeno/periodos", periodos);
+app.use("/eva_desempeno/evaluaciones", evaluaciones);
+app.use("/eva_desempeno/objetivos", objetivos);
 
 
 // Programar tarea para ejecutarse a los 30 minutos de cada hora
