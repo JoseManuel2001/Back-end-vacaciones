@@ -182,10 +182,19 @@ const getReporteSaldos = async (req, res) => {
     const pool = await getConnection();
     const result = await pool
       .request()
-      .query(`SELECT emp.trabajador, emp.nombre, emp.centro_costos, s.ano, s.dias_totales, s.dias_confirmados, s.dias_tentativos
-        FROM vacaciones_sypris.empleado AS  emp 
-        JOIN vacaciones_sypris.saldo AS s 
-        ON emp.trabajador = s.nomina WHERE s.dias_tentativos <> 0 OR s.dias_confirmados <> 0`);
+      .query(`SELECT
+    emp.trabajador,
+    emp.nombre,
+    emp.centro_costos,
+    s.ano,
+    s.dias_totales,
+    s.dias_confirmados,
+    s.dias_tentativos
+FROM vacaciones_sypris.empleado emp
+JOIN vacaciones_sypris.saldo s
+    ON LTRIM(RTRIM(emp.trabajador)) = LTRIM(RTRIM(s.nomina))
+WHERE
+    ISNULL(s.dias_totales, 0) > 0;`);
     res.json(result.recordset);
   } catch (error) {
     res.status(500).send(error.message);
