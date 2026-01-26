@@ -12,6 +12,7 @@ router.get("/:id", programacion_VacController.getOneProgVac);
 router.post("/", programacion_VacController.addProgVac);
 
 //PUT
+router.put("/bulk", programacion_VacController.updateProgVacBulk);
 router.put("/:id", programacion_VacController.updateProgVac);
 
 //DELETE

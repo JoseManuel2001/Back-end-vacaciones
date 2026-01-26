@@ -126,6 +126,57 @@ const updateSaldo = async (req, res) => {
   }
 };
 
+const updateSaldoBulk = async (req, res) => {
+  try {
+    const { saldos } = req.body;
+
+    if (!Array.isArray(saldos) || saldos.length === 0) {
+      return res.status(400).json({
+        message: "No se recibieron saldos para actualizar"
+      });
+    }
+
+    const pool = await getConnection();
+    const transaction = new sql.Transaction(pool);
+
+    await transaction.begin();
+
+    try {
+      for (const saldo of saldos) {
+        const request = new sql.Request(transaction);
+
+        await request
+          .input("id", sql.Int, saldo.id)
+          .input("dias_tentativos", sql.Int, saldo.dias_tentativos)
+          .input("dias_confirmados", sql.Int, saldo.dias_confirmados)
+          .query(`
+            UPDATE vacaciones_sypris.saldo
+            SET
+              dias_tentativos = @dias_tentativos,
+              dias_confirmados = @dias_confirmados
+            WHERE id = @id
+          `);
+      }
+
+      await transaction.commit();
+
+      res.json({
+        message: "Saldos actualizados correctamente",
+        total: saldos.length
+      });
+
+    } catch (err) {
+      await transaction.rollback();
+      throw err;
+    }
+
+  } catch (error) {
+    console.error("Error en updateSaldoBulk:", error.message);
+    res.status(500).send("Error al actualizar saldos de vacaciones");
+  }
+};
+
+
 const getReporteSaldos = async (req, res) => {
   try {
     const pool = await getConnection();
@@ -149,5 +200,6 @@ module.exports = {
     deleteSaldo,
     updateSaldo,
     getReporteSaldos,
+    updateSaldoBulk,
   },
 };

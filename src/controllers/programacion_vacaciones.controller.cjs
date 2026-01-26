@@ -172,6 +172,73 @@ const updateProgVac = async (req, res) => {
   }
 };
 
+const updateProgVacBulk = async (req, res) => {
+  try {
+    const { registros } = req.body;
+
+    if (!Array.isArray(registros) || registros.length === 0) {
+      return res.status(400).json({ message: "No se recibieron registros para actualizar" });
+    }
+
+    const pool = await getConnection();
+    const transaction = new sql.Transaction(pool);
+
+    await transaction.begin();
+
+    try {
+      for (const dato of registros) {
+        const request = new sql.Request(transaction);
+
+        await request
+          .input("id", sql.Int, dato.id)
+          .input("nomina_empleado", sql.NVarChar, dato.nomina_empleado)
+          .input("dias_solicitados", sql.Int, dato.dias_solicitados)
+          .input("fecha_inicio", sql.NVarChar, dato.fecha_inicio)
+          .input("fecha_termino", sql.NVarChar, dato.fecha_termino)
+          .input("estado_supervisor", sql.NVarChar, dato.estado_supervisor)
+          .input("comentario_supervisor", sql.NVarChar, dato.comentario_supervisor)
+          .input("comentario_rh", sql.NVarChar, dato.comentario_rh)
+          .input("fecha_creacion", sql.NVarChar, dato.fecha_creacion)
+          .input("estatus_rh", sql.NVarChar, dato.estatus_rh)
+          .input("nombre_aprobado_rh", sql.NVarChar, dato.nombre_aprobado_rh)
+          .input("nombre_aprobado_sup", sql.NVarChar, dato.nombre_aprobado_sup)
+          .query(`
+            UPDATE vacaciones_sypris.programacion_vacaciones
+            SET 
+              nomina_empleado = @nomina_empleado,
+              dias_solicitados = @dias_solicitados,
+              fecha_inicio = @fecha_inicio,
+              fecha_termino = @fecha_termino,
+              estado_supervisor = @estado_supervisor,
+              comentario_supervisor = @comentario_supervisor,
+              comentario_rh = @comentario_rh,
+              fecha_creacion = @fecha_creacion,
+              estatus_rh = @estatus_rh,
+              nombre_aprobado_rh = @nombre_aprobado_rh,
+              nombre_aprobado_sup = @nombre_aprobado_sup
+            WHERE id = @id
+          `);
+      }
+
+      await transaction.commit();
+
+      res.json({
+        message: "Registros actualizados correctamente",
+        total: registros.length
+      });
+
+    } catch (err) {
+      await transaction.rollback();
+      throw err;
+    }
+
+  } catch (error) {
+    console.error("Error en updateProgVacBulk:", error.message);
+    res.status(500).send("Error al actualizar las programaciones de vacaciones.");
+  }
+};
+
+
 
 module.exports = {
   methods: {
@@ -180,5 +247,6 @@ module.exports = {
     addProgVac,
     deleteProgVac,
     updateProgVac,
+    updateProgVacBulk,
   },
 };

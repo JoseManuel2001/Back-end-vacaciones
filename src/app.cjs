@@ -1,9 +1,9 @@
-const express = require ('express');
+const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const TokenUsuario = require('./routes/TokenUsuario.routes.cjs');
 const EmpleadoRoutes = require('./routes/Empleado.routes.cjs');
-const formatoVacaciones = require('./routes/formatoVacaciones.routes.cjs');1
+const formatoVacaciones = require('./routes/formatoVacaciones.routes.cjs'); 1
 const Supervisor = require('./routes/Supervisor.routes.cjs');
 const programacion_Vacaciones = require('./routes/programacion_vacaciones.cjs');
 const Saldo = require('./routes/Saldo.router.cjs');
@@ -17,16 +17,16 @@ const objetivos = require('./routes/evaluacion_objetivos.routes.cjs');
 const app = express();
 
 //habilitar cors
- app.use(
-   cors({
-     origin: "*",
-     methods: ["GET", "POST", "PUT", "DELETE"],
-     allowedHeaders: ["Content-Type", "Authorization"],
-   })
- );
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 //settings
-app.set("port", 1350);
+app.set("port", 1341);
 
 //middlewares
 app.use(morgan("dev"));

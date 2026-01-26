@@ -13,6 +13,7 @@ router.get("/reporte/saldos", saldoController.getReporteSaldos);
 router.post("/", saldoController.addSaldo);
 
 //PUT
+router.put("/bulk", saldoController.updateSaldoBulk);
 router.put("/:id", saldoController.updateSaldo);
 
 //DELETE
