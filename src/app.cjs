@@ -13,6 +13,7 @@ const banco = require('./routes/banco.routes.cjs');
 const periodos = require('./routes/periodos_evaluacion.routes.cjs');
 const evaluaciones = require('./routes/evaluaciones.routes.cjs');
 const objetivos = require('./routes/evaluacion_objetivos.routes.cjs');
+const reportexdias = require('./routes/reportexdias.routes.cjs');
 
 const app = express();
 
@@ -44,7 +45,7 @@ app.use("/vacaciones/banco", banco);
 app.use("/eva_desempeno/periodos", periodos);
 app.use("/eva_desempeno/evaluaciones", evaluaciones);
 app.use("/eva_desempeno/objetivos", objetivos);
-
+app.use("/vacaciones/reportexdias", reportexdias);
 
 
 module.exports = app;

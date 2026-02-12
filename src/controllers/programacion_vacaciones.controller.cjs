@@ -45,7 +45,9 @@ const addProgVac = async (req, res) => {
       fecha_creacion,
       estatus_rh,
       nombre_aprobado_rh,
-      nombre_aprobado_sup
+      nombre_aprobado_sup,
+      detalle_dias,
+
     } = req.body;
 
     if (
@@ -71,6 +73,7 @@ console.log("Datos recibidos:", {
       comentario_rh,
       fecha_creacion,
       estatus_rh,
+      detalle_dias,
     });
     const pool = await getConnection();
     await pool
@@ -85,11 +88,12 @@ console.log("Datos recibidos:", {
       .input("fecha_creacion", fecha_creacion)
       .input("nombre_aprobado_rh", nombre_aprobado_rh)
       .input("nombre_aprobado_sup", nombre_aprobado_sup)
-      .input("estatus_rh", estatus_rh).query(`
+      .input("estatus_rh", estatus_rh)
+      .input("detalle_dias", detalle_dias).query(`
     INSERT INTO vacaciones_sypris.programacion_vacaciones
-    (nomina_empleado, dias_solicitados, fecha_inicio, fecha_termino, estado_supervisor, comentario_supervisor, comentario_rh, fecha_creacion, estatus_rh)
+    (nomina_empleado, dias_solicitados, fecha_inicio, fecha_termino, estado_supervisor, comentario_supervisor, comentario_rh, fecha_creacion, estatus_rh, detalle_dias)
     VALUES
-    (@nomina_empleado, @dias_solicitados, @fecha_inicio, @fecha_termino, @estado_supervisor, @comentario_supervisor, @comentario_rh, @fecha_creacion, @estatus_rh)
+    (@nomina_empleado, @dias_solicitados, @fecha_inicio, @fecha_termino, @estado_supervisor, @comentario_supervisor, @comentario_rh, @fecha_creacion, @estatus_rh, @detalle_dias)
   `);
 
     res.json({ message: "Vacacion creada" });
