@@ -103,6 +103,42 @@ const deletePeriodo = async (req, res) => {
   }
 };
 
+export const getPeriodoActivo = async (req, res) => {
+  try {
+    const pool = await getConnection();
+    const result = await pool
+      .request()
+      .query(`
+            SELECT TOP 1
+                id_periodo,
+                nombre_periodo,
+                fecha_inicio,
+                fecha_fin
+            FROM vacaciones_sypris.periodos_evaluacion
+            WHERE CAST(GETDATE() AS DATE) 
+                  BETWEEN fecha_inicio AND fecha_fin
+            ORDER BY fecha_inicio DESC
+        `)
+
+    if (result.recordset.length === 0) {
+      return res.json({
+        activo: false
+      })
+    }
+
+    const periodo = result.recordset[0]
+
+    res.json({
+      activo: true,
+      ...periodo
+    })
+
+  } catch (error) {
+    res.status(500).json({ error: error.message })
+  }
+}
+
+
 module.exports = {
   methods: {
     getPeriodos,
@@ -110,5 +146,6 @@ module.exports = {
     addPeriodo,
     updatePeriodo,
     deletePeriodo,
+    getPeriodoActivo
   },
 };
