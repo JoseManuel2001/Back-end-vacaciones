@@ -20,8 +20,6 @@ const app = express();
 app.use(
   cors({
     origin: "*",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
@@ -47,8 +45,6 @@ app.use("/eva_desempeno/periodos", periodos);
 app.use("/eva_desempeno/evaluaciones", evaluaciones);
 app.use("/eva_desempeno/objetivos", objetivos);
 
-
-// Programar tarea para ejecutarse a los 30 minutos de cada hora
 
 
 module.exports = app;
