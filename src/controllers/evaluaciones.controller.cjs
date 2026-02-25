@@ -1,3 +1,4 @@
+const { get } = require("axios");
 const { getConnection, sql } = require("../database/database.cjs");
 
 // GET ALL
@@ -59,6 +60,56 @@ const getEvaluacionesData = async (req, res) => {
     res.status(500).send(error.message);
   }
 };
+const getEvaluacionDataporID = async (req, res) => {
+  
+  try {
+  const { id } = req.params;
+  const pool = await getConnection();
+  const result = await pool
+  .request()
+  .input("id", sql.Int, id)
+  .query(`SELECT ev.id_evaluacion,
+                    ev.id_empleado AS trabajador,
+                    pe.nombre_periodo AS periodo,
+                    ev.fecha_creacion,
+                    ev.estatus,
+                    ev.calificacion_final,
+                    ev.ultima_edicion,
+                    emp.centro_costos,
+                    emp.supervisor AS nomina_supervisor1,
+                    emp.supervisor2 AS nomina_supervisor2,
+                    emp.nombre,
+                    emp2.nombre AS supervisor_nombre,
+                    count(ob.id_objetivo) as objetivos
+                  FROM vacaciones_sypris.evaluaciones ev
+                  JOIN vacaciones_sypris.empleado emp 
+                    ON emp.trabajador = ev.id_empleado
+                  JOIN vacaciones_sypris.empleado emp2 
+                    ON emp.supervisor = emp2.trabajador
+                  LEFT JOIN vacaciones_sypris.objetivo_evaluaciones ob 
+                    ON ob.id_evaluacion = ev.id_evaluacion
+                  JOIN vacaciones_sypris.periodos_evaluacion pe
+                    ON pe.id_periodo = ev.periodo
+                  WHERE ev.id_evaluacion = @id
+                  GROUP BY
+                      ev.id_evaluacion,
+                      ev.id_empleado,
+                      pe.nombre_periodo,
+                      ev.fecha_creacion,
+                      ev.estatus,
+                      ev.calificacion_final,
+                      ev.ultima_edicion,
+                      emp.centro_costos,
+                      emp.supervisor,
+                      emp.supervisor2,
+                      emp.nombre,
+                      emp2.nombre;`);
+    
+    res.json(result.recordset);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+};
 const getEvaluacionesActivas = async (req, res) => {
   try {
     const query = `SELECT ev.id_evaluacion,
@@ -115,7 +166,21 @@ const getOneEvaluacion = async (req, res) => {
       .request()
       .input("id", sql.Int, id)
       .query(
-        "SELECT * FROM vacaciones_sypris.evaluaciones WHERE id_evaluacion = @id",
+        `SELECT ev.id_evaluacion, 
+        ev.id_empleado, 
+        ev.periodo, 
+        ev.fecha_creacion, 
+        ev.estatus, 
+        ev.calificacion_final, 
+        ev.ultima_edicion, 
+        emp.centro_costos,
+        emp.supervisor AS nomina_supervisor1,
+        emp.supervisor2 AS nomina_supervisor2,
+        emp.nombre
+        FROM vacaciones_sypris.evaluaciones ev
+        JOIN vacaciones_sypris.empleado emp 
+          ON emp.trabajador = ev.id_empleado
+        WHERE id_evaluacion = @id`
       );
     res.json(result.recordset);
   } catch (error) {
@@ -211,6 +276,7 @@ module.exports = {
     updateEvaluacion,
     deleteEvaluacion,
     getEvaluacionesData,
-    getEvaluacionesActivas
+    getEvaluacionesActivas,
+    getEvaluacionDataporID
   },
 };

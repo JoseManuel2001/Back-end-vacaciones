@@ -7,6 +7,7 @@ const router = Router();
 // GET BY EVALUACION
 router.get( "/evaluacion/:id_evaluacion",objetivosController.getObjetivosByEvaluacion);
 
+
 // POST
 router.post("/", validarOperacionEvaluacion, objetivosController.addObjetivo);
 

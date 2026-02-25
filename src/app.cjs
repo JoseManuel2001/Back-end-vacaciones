@@ -14,6 +14,9 @@ const periodos = require('./routes/periodos_evaluacion.routes.cjs');
 const evaluaciones = require('./routes/evaluaciones.routes.cjs');
 const objetivos = require('./routes/evaluacion_objetivos.routes.cjs');
 const reportexdias = require('./routes/reportexdias.routes.cjs');
+const caracteristicas = require('./routes/caracteristicas.routes.cjs');
+const calificacion_caracteristicas = require('./routes/calificacion_caracteristicas.routes.cjs');
+const calificacion_objetivos = require('./routes/calificacion_objetivos.routes.cjs');
 
 const app = express();
 
@@ -46,6 +49,8 @@ app.use("/eva_desempeno/periodos", periodos);
 app.use("/eva_desempeno/evaluaciones", evaluaciones);
 app.use("/eva_desempeno/objetivos", objetivos);
 app.use("/vacaciones/reportexdias", reportexdias);
-
+app.use("/eva_desempeno/caracteristicas", caracteristicas);
+app.use("/eva_desempeno/calificacion_caracteristicas", calificacion_caracteristicas);
+app.use("/eva_desempeno/calificacion_objetivos", calificacion_objetivos);
 
 module.exports = app;

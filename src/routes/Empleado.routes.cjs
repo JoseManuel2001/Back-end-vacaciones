@@ -7,6 +7,7 @@ const router = Router();
 //GET
 router.get("/", empleadoController.getEmpleado);
 router.get("/:trabajador", empleadoController.getOneEmpleado);
+router.get("/supervisor/:trabajador", empleadoController.getOneSupervisor);
 
 //POST
 router.post("/", empleadoController.addEmpleado);

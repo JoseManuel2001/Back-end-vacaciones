@@ -33,6 +33,34 @@ const getOneEmpleado = async (req, res) => {
   }
 };
 
+const getOneSupervisor = async (req, res) => {
+  try {
+    const { trabajador } = req.params;
+    console.log("Trabajador:", trabajador);
+
+    const pool = await getConnection();
+
+    const result = await pool
+      .request()
+      .input("trabajador", sql.NVarChar, trabajador).query(`
+        SELECT 
+          e.trabajador,
+          e.nombre AS nombre_trabajador,
+          e.supervisor,
+          s.nombre AS nombre_supervisor
+        FROM vacaciones_sypris.empleado e
+        INNER JOIN vacaciones_sypris.empleado s 
+          ON e.supervisor = s.trabajador
+        WHERE e.trabajador = @trabajador
+      `);
+
+    res.json(result.recordset);
+  } catch (error) {
+    console.error("Error en getOneSupervisor:", error);
+    res.status(500).send(error.message);
+  }
+};
+
 const addEmpleado = async (req, res) => {
   try {
     const {
@@ -148,5 +176,6 @@ module.exports = {
     addEmpleado,
     deleteEmpleado,
     updateEmpleado,
+    getOneSupervisor,
   },
 };
