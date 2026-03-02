@@ -6,7 +6,7 @@ const getPeriodos = async (req, res) => {
     const pool = await getConnection();
     const result = await pool
       .request()
-      .query("SELECT * FROM vacaciones_sypris.periodos_evaluacion");
+      .query("SELECT * FROM vacaciones_sypris.periodos_evaluacion WHERE active = 1 ORDER BY id_periodo DESC");
     res.json(result.recordset);
   } catch (error) {
     res.status(500).send(error.message);
@@ -61,7 +61,7 @@ const addPeriodo = async (req, res) => {
 const updatePeriodo = async (req, res) => {
   try {
     const { id } = req.params;
-    const { nombre_periodo, fecha_inicio, fecha_fin, creado_por } = req.body;
+    const { nombre_periodo, fecha_inicio, fecha_fin, creado_por, estado, active } = req.body;
 
     const pool = await getConnection();
     await pool
@@ -70,12 +70,16 @@ const updatePeriodo = async (req, res) => {
       .input("nombre_periodo", sql.VarChar, nombre_periodo)
       .input("fecha_inicio", sql.Date, fecha_inicio)
       .input("fecha_fin", sql.Date, fecha_fin)
-      .input("creado_por", sql.VarChar, creado_por).query(`
+      .input("creado_por", sql.VarChar, creado_por)
+      .input("estado", sql.Int, estado)
+      .input("active", sql.Int, active).query(`
         UPDATE vacaciones_sypris.periodos_evaluacion
         SET nombre_periodo = @nombre_periodo,
             fecha_inicio = @fecha_inicio,
             fecha_fin = @fecha_fin,
-            creado_por = @creado_por
+            creado_por = @creado_por,
+            estado = @estado,
+            active = @active
         WHERE id_periodo = @id
       `);
 
@@ -117,6 +121,7 @@ export const getPeriodoActivo = async (req, res) => {
             FROM vacaciones_sypris.periodos_evaluacion
             WHERE CAST(GETDATE() AS DATE) 
                   BETWEEN fecha_inicio AND fecha_fin
+            AND estado = 1
             ORDER BY fecha_inicio DESC
         `)
 

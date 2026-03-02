@@ -23,6 +23,7 @@ export const validarOperacionEvaluacion = async (req, res, next) => {
             FROM vacaciones_sypris.periodos_evaluacion
             WHERE CAST(GETDATE() AS DATE)
                 BETWEEN fecha_inicio AND fecha_fin
+                AND estado = 1
         `)
 
         const periodoActivo = periodoResult.recordset.length > 0

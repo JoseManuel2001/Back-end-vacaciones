@@ -5,7 +5,7 @@ const getCaracteristicas = async (req, res) => {
     const pool = await getConnection();
     const result = await pool
       .request()
-      .query("SELECT * FROM vacaciones_sypris.caracteristica");
+      .query("SELECT * FROM vacaciones_sypris.caracteristica ORDER BY active DESC, id_caracteristica ASC");
     res.json(result.recordset);
   } catch (error) {
     res.status(500).send(error.message);
@@ -22,7 +22,7 @@ const getOneCaracteristica = async (req, res) => {
       .request()
       .input("id", sql.Int, id)
       .query(
-        "SELECT * FROM vacaciones_sypris.caracteristica WHERE id = @id",
+        "SELECT * FROM vacaciones_sypris.caracteristica WHERE id_caracteristica = @id",
       );
 
     res.json(result.recordset);
@@ -68,7 +68,7 @@ const deleteCaracteristica = async (req, res) => {
       .request()
       .input("id", sql.Int, id)
       .query(
-        "DELETE FROM vacaciones_sypris.caracteristica WHERE id = @id",
+        "DELETE FROM vacaciones_sypris.caracteristica WHERE id_caracteristica = @id",
       );
     res.json(result);
   } catch (error) {
@@ -82,17 +82,20 @@ const updateCaracteristica = async (req, res) => {
     console.log("Característica a actualizar:", id);
     const {
       nombre,
+      active
     } = req.body;
     console.log("Datos recibidos para actualizar:", req.body);
     const pool = await getConnection();
     const result = await pool
       .request()
       .input("id", sql.Int, id)
-      .input("nombre", sql.VarChar, nombre).query(`
+      .input("nombre", sql.VarChar, nombre)
+      .input("active", sql.Int, active).query(`
     UPDATE vacaciones_sypris.caracteristica
     SET 
-      nombre = @nombre
-    WHERE id = @id
+      nombre = @nombre,
+      active = @active
+    WHERE id_caracteristica = @id
   `);
     res.json({
       message: "Característica actualizada",
