@@ -17,6 +17,7 @@ const reportexdias = require('./routes/reportexdias.routes.cjs');
 const caracteristicas = require('./routes/caracteristicas.routes.cjs');
 const calificacion_caracteristicas = require('./routes/calificacion_caracteristicas.routes.cjs');
 const calificacion_objetivos = require('./routes/calificacion_objetivos.routes.cjs');
+const guardarEvaluacion = require('./routes/guardarEvaluacion.routes.cjs');
 
 const app = express();
 
@@ -52,5 +53,6 @@ app.use("/vacaciones/reportexdias", reportexdias);
 app.use("/eva_desempeno/caracteristicas", caracteristicas);
 app.use("/eva_desempeno/calificacion_caracteristicas", calificacion_caracteristicas);
 app.use("/eva_desempeno/calificacion_objetivos", calificacion_objetivos);
+app.use("/eva_desempeno/guardarEvaluacion", guardarEvaluacion);
 
 module.exports = app;
