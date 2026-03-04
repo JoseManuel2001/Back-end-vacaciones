@@ -7,6 +7,7 @@ const router = Router();
 //GET
 router.get("/", calificacionCaracteristicas.getCalificacionCaracteristicas);
 router.get("/:id", calificacionCaracteristicas.getOneCalificacionCaracteristica);
+router.get("/id_evaluacion/:id", calificacionCaracteristicas.getCalificacionCractxid);
 
 //POST
 router.post("/", calificacionCaracteristicas.addCalificacionCaracteristica);

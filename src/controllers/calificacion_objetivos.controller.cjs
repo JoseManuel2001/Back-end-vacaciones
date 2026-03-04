@@ -18,8 +18,11 @@ const getOneCalificacionObjetivo = async (req, res) => {
     console.log("Calificación Objetivo:", id);
     const pool = await getConnection();
 
-    const result = await pool.request().input("id", sql.Int, id).query(
-      `SELECT 
+    const result = await pool
+      .request()
+      .input("id", sql.Int, id)
+      .query(
+        `SELECT 
         co.id_calificacion,
         co.id_objetivo,
         co.calificacion,
@@ -30,7 +33,8 @@ const getOneCalificacionObjetivo = async (req, res) => {
         o.id_evaluacion
         FROM vacaciones_sypris.calificacion_objetivo co
         INNER JOIN vacaciones_sypris.objetivo_evaluaciones o ON co.id_objetivo = o.id_objetivo
-        WHERE o.id_evaluacion = @id`);
+        WHERE o.id_evaluacion = @id`,
+      );
 
     res.json(result.recordset);
     console.log(result.recordset);
@@ -45,9 +49,7 @@ const getCalificacionByid_tipo_evaluador = async (req, res) => {
     const { id } = req.params;
     console.log("Calificación Objetivo por tipo de evaluador:", id);
     const pool = await getConnection();
-    const result = await pool
-      .request()
-      .input("id", sql.NVarChar, id)
+    const result = await pool.request().input("id", sql.NVarChar, id)
       .query(`SELECT 
         co.id_calificacion,
         co.id_objetivo,
@@ -64,6 +66,32 @@ const getCalificacionByid_tipo_evaluador = async (req, res) => {
     console.log(result.recordset);
   } catch (error) {
     console.error("Error en getCalificacionByid_tipo_evaluador:", error);
+    res.status(500).send(error.message);
+  }
+};
+
+const getCalificacionObjetivoxid = async (req, res) => {
+  try {
+    const { id } = req.params;
+    console.log("Calificación Objetivo por id_evaluacion:", id);
+    const pool = await getConnection();
+    const result = await pool.request().input("id", sql.Int, id).query(`SELECT 
+        o.id_evaluacion, 
+        o.id_objetivo, 
+        o.objetivo, 
+        o.id_empleado, 
+        co.id_calificacion, 
+        co.calificacion, 
+        co.comentario, 
+        co.evaluador, 
+        co.tipo_evaluador
+        FROM vacaciones_sypris.calificacion_objetivo co
+        INNER JOIN vacaciones_sypris.objetivo_evaluaciones o ON co.id_objetivo = o.id_objetivo
+        WHERE o.id_evaluacion = @id`);
+    res.json(result.recordset);
+    console.log(result.recordset);
+  } catch (error) {
+    console.error("Error en getCalificacionObjetivoByid_evaluacion:", error);
     res.status(500).send(error.message);
   }
 };
@@ -184,5 +212,6 @@ module.exports = {
     addCalificacionObjetivo,
     updateCalificacionObjetivo,
     deleteCalificacionObjetivo,
+    getCalificacionObjetivoxid,
   },
 };

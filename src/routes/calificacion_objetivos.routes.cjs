@@ -8,6 +8,7 @@ const router = Router();
 router.get("/", calificacionObjetivos.getCalificacionObjetivo);
 router.get("/evaluacion/:id", calificacionObjetivos.getOneCalificacionObjetivo);
 router.get("/tipo_evaluador/:id", calificacionObjetivos.getCalificacionByid_tipo_evaluador);
+router.get("/id_evaluacion/:id", calificacionObjetivos.getCalificacionObjetivoxid);
 
 //POST
 router.post("/", calificacionObjetivos.addCalificacionObjetivo);
