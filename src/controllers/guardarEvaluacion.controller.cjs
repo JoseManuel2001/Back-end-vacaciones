@@ -9,9 +9,9 @@ const guardarEvaluacion = async (req, res) => {
       id_evaluacion,
       estatus,
       calificacion_final,
+      comentario_general,
       objetivos,
       calificacion_caracteristicas,
-      calificacion_objetivos,
     } = req.body;
 
     if (!id_evaluacion || estatus === undefined) {
@@ -25,11 +25,14 @@ const guardarEvaluacion = async (req, res) => {
       .input("id_evaluacion", sql.Int, id_evaluacion)
       .input("estatus", sql.Int, estatus)
       .input("calificacion_final", sql.Int, calificacion_final)
-      .input("ultima_edicion", sql.DateTime, new Date()).query(`
+      .input("ultima_edicion", sql.DateTime, new Date())
+      .input("comentario_general", sql.NVarChar(50), comentario_general)
+      .query(`
         UPDATE vacaciones_sypris.evaluaciones
         SET estatus = @estatus,
             calificacion_final = @calificacion_final,
-            ultima_edicion = @ultima_edicion
+            ultima_edicion = @ultima_edicion,
+            comentario_general = @comentario_general
         WHERE id_evaluacion = @id_evaluacion
       `);
 
@@ -41,8 +44,8 @@ const guardarEvaluacion = async (req, res) => {
     const resultObjetivo = await new sql.Request(transaction)
       .input("id_objetivo", sql.Int, obj.id_objetivo || 0)
       .input("id_evaluacion", sql.Int, id_evaluacion)
-      .input("objetivo", sql.VarChar(sql.MAX), obj.objetivo)
-      .input("id_empleado", sql.VarChar(sql.MAX), obj.id_empleado)
+      .input("objetivo", sql.VarChar(250), obj.objetivo)
+      .input("id_empleado", sql.NVarChar(50), obj.id_empleado)
       .query(`
         DECLARE @nuevoId TABLE (id_objetivo INT);
 
@@ -70,9 +73,9 @@ const guardarEvaluacion = async (req, res) => {
         .input("id_calificacion", sql.Int, obj.calificacion.id_calificacion || 0)
         .input("id_objetivo", sql.Int, idObjetivoReal)
         .input("calificacion", sql.Int, obj.calificacion.calificacion)
-        .input("comentario", sql.VarChar(sql.MAX), obj.calificacion.comentario)
-        .input("evaluador", sql.VarChar(sql.MAX), obj.calificacion.evaluador)
-        .input("tipo_evaluador", sql.VarChar(sql.MAX), obj.calificacion.tipo_evaluador)
+        .input("comentario", sql.VarChar(100), obj.calificacion.comentario)
+        .input("evaluador", sql.VarChar(100), obj.calificacion.evaluador)
+        .input("tipo_evaluador", sql.VarChar(30), obj.calificacion.tipo_evaluador)
         .query(`
           MERGE vacaciones_sypris.calificacion_objetivo AS target
           USING (SELECT @id_calificacion AS id_calificacion) AS source
@@ -112,10 +115,10 @@ const guardarEvaluacion = async (req, res) => {
         .input("id_calificacion", sql.Int, carac.id_calificacion)
           .input("id_caracteristica", sql.Int, carac.id_caracteristica)
           .input("id_evaluacion", sql.Int, id_evaluacion)
-          .input("id_empleado", sql.VarChar(sql.MAX), carac.id_empleado)
+          .input("id_empleado", sql.NVarChar(50), carac.id_empleado)
           .input("calificacion", sql.Int, carac.calificacion)
-          .input("evaluador", sql.VarChar(sql.MAX), carac.evaluador)
-          .input("tipo_evaluador", sql.VarChar(sql.MAX), carac.tipo_evaluador)
+          .input("evaluador", sql.VarChar(50), carac.evaluador)
+          .input("tipo_evaluador", sql.VarChar(50), carac.tipo_evaluador)
           .query(`
             MERGE vacaciones_sypris.calificacion_caracteristica AS target
             USING (
