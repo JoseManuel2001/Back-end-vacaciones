@@ -74,22 +74,35 @@ const getCalificacionObjetivoxid = async (req, res) => {
   try {
     const { id } = req.params;
     console.log("Calificación Objetivo por id_evaluacion:", id);
+
     const pool = await getConnection();
-    const result = await pool.request().input("id", sql.Int, id).query(`SELECT 
-        o.id_evaluacion, 
-        o.id_objetivo, 
-        o.objetivo, 
-        o.id_empleado, 
-        co.id_calificacion, 
-        co.calificacion, 
-        co.comentario, 
-        co.evaluador, 
-        co.tipo_evaluador
+
+    const result = await pool.request().input("id", sql.Int, id).query(`
+        SELECT 
+            o.id_evaluacion, 
+            o.id_objetivo, 
+            o.objetivo, 
+            o.id_empleado
+        FROM vacaciones_sypris.objetivo_evaluaciones o
+        WHERE o.id_evaluacion = @id;
+
+        SELECT 
+            co.id_calificacion, 
+            co.id_objetivo,
+            co.calificacion, 
+            co.comentario, 
+            co.evaluador, 
+            co.tipo_evaluador
         FROM vacaciones_sypris.calificacion_objetivo co
-        INNER JOIN vacaciones_sypris.objetivo_evaluaciones o ON co.id_objetivo = o.id_objetivo
-        WHERE o.id_evaluacion = @id`);
-    res.json(result.recordset);
-    console.log(result.recordset);
+        INNER JOIN vacaciones_sypris.objetivo_evaluaciones o 
+            ON co.id_objetivo = o.id_objetivo
+        WHERE o.id_evaluacion = @id;
+      `);
+
+    res.json({
+      objetivos: result.recordsets[0],
+      calificaciones_objetivos: result.recordsets[1],
+    });
   } catch (error) {
     console.error("Error en getCalificacionObjetivoByid_evaluacion:", error);
     res.status(500).send(error.message);

@@ -47,25 +47,36 @@ const getOneCalificacionCaracteristica = async (req, res) => {
 const getCalificacionCractxid = async (req, res) => {
   try {
     const { id } = req.params;
-    console.log("Calificación Característica por id_evaluacion:", id);
+
     const pool = await getConnection();
-    const result = await pool.request().input("id", sql.Int, id)
-      .query(`SELECT 
-        c.id_caracteristica,
-        c.nombre,
-        cc.id_calificacion,
-        cc.id_caracteristica,
-        cc.id_evaluacion,
-        cc.id_empleado,
-        cc.calificacion,
-        cc.evaluador,
-        cc.tipo_evaluador,
-        cc.fecha_evaluacion
+
+    const result = await pool.request().input("id", sql.Int, id).query(`
+        SELECT 
+            c.id_caracteristica,
+            c.nombre
         FROM vacaciones_sypris.calificacion_caracteristica cc
-        INNER JOIN vacaciones_sypris.caracteristica c ON cc.id_caracteristica = c.id_caracteristica
-        WHERE cc.id_evaluacion = @id`);
-    res.json(result.recordset);
-    console.log(result.recordset);
+        INNER JOIN vacaciones_sypris.caracteristica c 
+            ON cc.id_caracteristica = c.id_caracteristica
+        WHERE cc.id_evaluacion = @id
+        GROUP BY c.id_caracteristica, c.nombre;
+
+        SELECT 
+            cc.id_calificacion,
+            cc.id_caracteristica,
+            cc.id_evaluacion,
+            cc.id_empleado,
+            cc.calificacion,
+            cc.evaluador,
+            cc.tipo_evaluador,
+            cc.fecha_evaluacion
+        FROM vacaciones_sypris.calificacion_caracteristica cc
+        WHERE cc.id_evaluacion = @id;
+      `);
+
+    res.json({
+      caracteristicas: result.recordsets[0],
+      calificaciones_caracteristicas: result.recordsets[1],
+    });
   } catch (error) {
     console.error("Error en getCalificacionCractxid:", error);
     res.status(500).send(error.message);
