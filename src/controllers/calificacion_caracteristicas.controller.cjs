@@ -27,13 +27,17 @@ const getOneCalificacionCaracteristica = async (req, res) => {
         cc.id_caracteristica,
         cc.id_evaluacion,
         cc.id_empleado,
+        emp.nombre AS nombre_empleado,
         cc.calificacion,
         cc.evaluador,
         cc.tipo_evaluador,
         cc.fecha_evaluacion,
-        c.nombre
+        c.nombre,
+        ev.estatus AS estatus_evaluacion
         FROM vacaciones_sypris.calificacion_caracteristica cc
         INNER JOIN vacaciones_sypris.caracteristica c ON cc.id_caracteristica = c.id_caracteristica
+        INNER JOIN vacaciones_sypris.evaluaciones ev ON cc.id_evaluacion = ev.id_evaluacion
+        INNER JOIN vacaciones_sypris.empleado emp ON emp.trabajador = cc.id_empleado
         WHERE cc.id_evaluacion = @id`);
 
     res.json(result.recordset);
@@ -51,25 +55,24 @@ const getCalificacionCractxid = async (req, res) => {
     const pool = await getConnection();
 
     const result = await pool.request().input("id", sql.Int, id).query(`
-        SELECT 
-            c.id_caracteristica,
-            c.nombre
-        FROM vacaciones_sypris.calificacion_caracteristica cc
-        INNER JOIN vacaciones_sypris.caracteristica c 
-            ON cc.id_caracteristica = c.id_caracteristica
-        WHERE cc.id_evaluacion = @id
-        GROUP BY c.id_caracteristica, c.nombre;
+        SELECT * FROM vacaciones_sypris.caracteristica;
 
         SELECT 
-            cc.id_calificacion,
-            cc.id_caracteristica,
-            cc.id_evaluacion,
-            cc.id_empleado,
-            cc.calificacion,
-            cc.evaluador,
-            cc.tipo_evaluador,
-            cc.fecha_evaluacion
+        cc.id_calificacion,
+        cc.id_caracteristica,
+        cc.id_evaluacion,
+        cc.id_empleado,
+        emp.nombre AS nombre_empleado,
+        cc.calificacion,
+        cc.evaluador,
+        cc.tipo_evaluador,
+        cc.fecha_evaluacion,
+        c.nombre,
+        ev.estatus AS estatus_evaluacion
         FROM vacaciones_sypris.calificacion_caracteristica cc
+        INNER JOIN vacaciones_sypris.caracteristica c ON cc.id_caracteristica = c.id_caracteristica
+        INNER JOIN vacaciones_sypris.evaluaciones ev ON cc.id_evaluacion = ev.id_evaluacion
+        INNER JOIN vacaciones_sypris.empleado emp ON emp.trabajador = cc.id_empleado
         WHERE cc.id_evaluacion = @id;
       `);
 

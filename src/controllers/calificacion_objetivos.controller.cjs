@@ -30,9 +30,13 @@ const getOneCalificacionObjetivo = async (req, res) => {
         co.evaluador,
         co.tipo_evaluador,
         o.objetivo,
-        o.id_evaluacion
+        o.id_evaluacion,
+        ev.estatus AS estatus_evaluacion
+        emp.nombre AS nombre_empleado
         FROM vacaciones_sypris.calificacion_objetivo co
         INNER JOIN vacaciones_sypris.objetivo_evaluaciones o ON co.id_objetivo = o.id_objetivo
+        INNER JOIN vacaciones_syptis.evaluaciones ev ON o.id_evaluacion = ev.id_evaluacion
+        INNER JOIN vacaciones_syptis.empleado emp ON emp.trabajador = ev.id_empleado
         WHERE o.id_evaluacion = @id`,
       );
 
@@ -87,15 +91,20 @@ const getCalificacionObjetivoxid = async (req, res) => {
         WHERE o.id_evaluacion = @id;
 
         SELECT 
-            co.id_calificacion, 
-            co.id_objetivo,
-            co.calificacion, 
-            co.comentario, 
-            co.evaluador, 
-            co.tipo_evaluador
+        co.id_calificacion,
+        co.id_objetivo,
+        co.calificacion,
+        co.comentario,
+        co.evaluador,
+        co.tipo_evaluador,
+        o.objetivo,
+        o.id_evaluacion,
+        ev.estatus AS estatus_evaluacion,
+        emp.nombre AS nombre_empleado
         FROM vacaciones_sypris.calificacion_objetivo co
-        INNER JOIN vacaciones_sypris.objetivo_evaluaciones o 
-            ON co.id_objetivo = o.id_objetivo
+        INNER JOIN vacaciones_sypris.objetivo_evaluaciones o ON co.id_objetivo = o.id_objetivo
+        INNER JOIN vacaciones_sypris.evaluaciones ev ON o.id_evaluacion = ev.id_evaluacion
+        INNER JOIN vacaciones_sypris.empleado emp ON emp.trabajador = ev.id_empleado
         WHERE o.id_evaluacion = @id;
       `);
 

@@ -23,11 +23,11 @@ const guardarEvaluacion = async (req, res) => {
 
     // 🔹 1️⃣ Actualizar evaluación
     await new sql.Request(transaction)
-      .input("id_evaluacion", sql.Int, id_evaluacion)
-      .input("estatus", sql.Int, estatus)
-      .input("calificacion_final", sql.Int, calificacion_final)
-      .input("ultima_edicion", sql.DateTime, new Date())
-      .input("comentario_general", sql.NVarChar(50), comentario_general)
+      .input("id_evaluacion", id_evaluacion)
+      .input("estatus", estatus)
+      .input("calificacion_final", calificacion_final)
+      .input("ultima_edicion", new Date())
+      .input("comentario_general", comentario_general)
       .query(`
         UPDATE vacaciones_sypris.evaluaciones
         SET estatus = @estatus,
@@ -38,16 +38,16 @@ const guardarEvaluacion = async (req, res) => {
       `);
 
     // 🔹 2️⃣ UPSERT objetivo (sin usar id_objetivo)
-   if (objetivos?.length) {
-  for (const obj of objetivos) {
+    if (objetivos?.length) {
+      for (const obj of objetivos) {
 
-    // 🔹 Insertar o actualizar objetivo y obtener ID real
-    const resultObjetivo = await new sql.Request(transaction)
-      .input("id_objetivo", sql.Int, obj.id_objetivo || 0)
-      .input("id_evaluacion", sql.Int, id_evaluacion)
-      .input("objetivo", sql.VarChar(250), obj.objetivo)
-      .input("id_empleado", sql.NVarChar(50), obj.id_empleado)
-      .query(`
+        // 🔹 Insertar o actualizar objetivo y obtener ID real
+        const resultObjetivo = await new sql.Request(transaction)
+          .input("id_objetivo", sql.Int, obj.id_objetivo)
+          .input("id_evaluacion", sql.Int, id_evaluacion)
+          .input("objetivo", sql.VarChar(250), obj.objetivo)
+          .input("id_empleado", sql.NVarChar(50), obj.id_empleado)
+          .query(`
         DECLARE @nuevoId TABLE (id_objetivo INT);
 
         MERGE vacaciones_sypris.objetivo_evaluaciones AS target
@@ -66,18 +66,18 @@ const guardarEvaluacion = async (req, res) => {
         SELECT id_objetivo FROM @nuevoId;
       `);
 
-    const idObjetivoReal = resultObjetivo.recordset[0].id_objetivo;
+        const idObjetivoReal = resultObjetivo.recordset[0].id_objetivo;
 
-    // 🔹 Si viene calificación dentro del objetivo
-    if (obj.calificacion) {
-      await new sql.Request(transaction)
-        .input("id_calificacion", sql.Int, obj.calificacion.id_calificacion || 0)
-        .input("id_objetivo", sql.Int, idObjetivoReal)
-        .input("calificacion", sql.Int, obj.calificacion.calificacion)
-        .input("comentario", sql.VarChar(100), obj.calificacion.comentario)
-        .input("evaluador", sql.VarChar(100), obj.calificacion.evaluador)
-        .input("tipo_evaluador", sql.VarChar(30), obj.calificacion.tipo_evaluador)
-        .query(`
+        // 🔹 Si viene calificación dentro del objetivo
+        if (obj.calificacion) {
+          await new sql.Request(transaction)
+            .input("id_calificacion", sql.Int, obj.calificacion.id_calificacion)
+            .input("id_objetivo", sql.Int, idObjetivoReal)
+            .input("calificacion", sql.Int, obj.calificacion.calificacion)
+            .input("comentario", sql.VarChar(100), obj.calificacion.comentario)
+            .input("evaluador", sql.VarChar(100), obj.calificacion.evaluador)
+            .input("tipo_evaluador", sql.VarChar(30), obj.calificacion.tipo_evaluador)
+            .query(`
           MERGE vacaciones_sypris.calificacion_objetivo AS target
           USING (SELECT @id_calificacion AS id_calificacion) AS source
           ON target.id_calificacion = source.id_calificacion
@@ -105,15 +105,15 @@ const guardarEvaluacion = async (req, res) => {
               @tipo_evaluador
             );
         `);
+        }
+      }
     }
-  }
-}
 
     // 🔹 3️⃣ UPSERT calificación características
     if (calificacion_caracteristicas?.length) {
       for (const carac of calificacion_caracteristicas) {
         await new sql.Request(transaction)
-        .input("id_calificacion", sql.Int, carac.id_calificacion)
+          .input("id_calificacion", sql.Int, carac.id_calificacion)
           .input("id_caracteristica", sql.Int, carac.id_caracteristica)
           .input("id_evaluacion", sql.Int, id_evaluacion)
           .input("id_empleado", sql.NVarChar(50), carac.id_empleado)
