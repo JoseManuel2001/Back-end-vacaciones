@@ -79,7 +79,7 @@ const getEvaluacionDataporID = async (req, res) => {
                     ev.ultima_edicion,
                     ev.comentario_general,
                     emp.centro_costos,
-                    emp.supervisor1 AS nomina_supervisor1,
+                    emp.supervisor AS nomina_supervisor1,
                     emp.supervisor2 AS nomina_supervisor2,
                     emp.nombre,
                     emp2.nombre AS supervisor_nombre,
