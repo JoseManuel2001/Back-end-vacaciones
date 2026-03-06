@@ -12,6 +12,7 @@ const guardarEvaluacion = async (req, res) => {
       comentario_general,
       objetivos,
       calificacion_caracteristicas,
+      objetivos_eliminados,
     } = req.body;
 
     if (!id_evaluacion || estatus === undefined) {
@@ -151,6 +152,18 @@ const guardarEvaluacion = async (req, res) => {
                 @evaluador,
                 @tipo_evaluador
               );
+          `);
+      }
+    }
+
+    // 🔹 4️⃣ Eliminar objetivos eliminados
+    if (objetivos_eliminados?.length) {
+      for (const id of objetivos_eliminados) {
+        await new sql.Request(transaction)
+          .input("id_objetivo", sql.Int, id)
+          .query(`
+            DELETE FROM vacaciones_sypris.objetivo_evaluaciones
+            WHERE id_objetivo = @id_objetivo
           `);
       }
     }
