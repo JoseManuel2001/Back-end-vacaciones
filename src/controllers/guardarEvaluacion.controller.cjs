@@ -172,9 +172,17 @@ const guardarEvaluacion = async (req, res) => {
 
     res.json({ message: "Evaluación guardada correctamente" });
   } catch (error) {
+  console.error("ERROR REAL:", error);
+
+  if (!transaction._aborted) {
     await transaction.rollback();
-    res.status(500).json({ message: error.message });
   }
+
+  res.status(500).json({
+    message: error.message,
+    detail: error
+  });
+}
 };
 
 module.exports = {

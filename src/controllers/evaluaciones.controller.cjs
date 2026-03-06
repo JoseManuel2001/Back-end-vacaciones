@@ -76,8 +76,8 @@ const getEvaluacionDataporID = async (req, res) => {
                     ev.calificacion_final,
                     ev.ultima_edicion,
                     emp.centro_costos,
-                    emp.supervisor AS nomina_supervisor1,
-                    emp.supervisor2 AS nomina_supervisor2,
+                    emp.supervisor1_evaluacion AS nomina_supervisor1,
+                    emp.supervisor2_evaluacion AS nomina_supervisor2,
                     emp.nombre,
                     emp2.nombre AS supervisor_nombre,
                     count(ob.id_objetivo) as objetivos
