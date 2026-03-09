@@ -272,6 +272,9 @@ const deleteEvaluacion = async (req, res) => {
   }
 };
 
+
+
+
 module.exports = {
   methods: {
     getEvaluaciones,
@@ -281,6 +284,7 @@ module.exports = {
     deleteEvaluacion,
     getEvaluacionesData,
     getEvaluacionesActivas,
-    getEvaluacionDataporID
+    getEvaluacionDataporID,
+    firmarEvaluacion,
   },
 };

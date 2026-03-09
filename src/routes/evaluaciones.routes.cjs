@@ -10,6 +10,7 @@ router.get("/data", evaluacionesController.getEvaluacionesData);
 router.get("/activas", evaluacionesController.getEvaluacionesActivas);
 router.get("/data/:id", evaluacionesController.getEvaluacionDataporID);
 
+
 // GET ONE
 router.get("/:id", evaluacionesController.getOneEvaluacion);
 
@@ -18,6 +19,7 @@ router.post("/", validarOperacionEvaluacion, evaluacionesController.addEvaluacio
 
 // PUT
 router.put("/:id", validarOperacionEvaluacion, evaluacionesController.updateEvaluacion);
+router.put("/firmar/:id",validarOperacionEvaluacion,evaluacionesController.firmarEvaluacion,);
 
 // DELETE
 router.delete("/:id", validarOperacionEvaluacion, evaluacionesController.deleteEvaluacion);
