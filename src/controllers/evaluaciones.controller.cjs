@@ -83,7 +83,8 @@ const getEvaluacionDataporID = async (req, res) => {
                     emp.supervisor2 AS nomina_supervisor2,
                     emp.nombre,
                     emp2.nombre AS supervisor_nombre,
-                    count(ob.id_objetivo) as objetivos
+                    count(ob.id_objetivo) as objetivos,
+                    ev.fecha_firma
                   FROM vacaciones_sypris.evaluaciones ev
                   JOIN vacaciones_sypris.empleado emp 
                     ON emp.trabajador = ev.id_empleado
@@ -107,7 +108,8 @@ const getEvaluacionDataporID = async (req, res) => {
                       emp.supervisor,
                       emp.supervisor2,
                       emp.nombre,
-                      emp2.nombre;`);
+                      emp2.nombre,
+                      ev.fecha_firma;`);
     
     res.json(result.recordset);
   } catch (error) {
