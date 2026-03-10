@@ -19,7 +19,7 @@ router.post("/", validarOperacionEvaluacion, evaluacionesController.addEvaluacio
 
 // PUT
 router.put("/:id", validarOperacionEvaluacion, evaluacionesController.updateEvaluacion);
-router.put("/firmar/:id",validarOperacionEvaluacion,evaluacionesController.firmarEvaluacion,);
+router.put("/firmar/:id",validarOperacionEvaluacion,evaluacionesController.firmarEvaluacion);
 
 // DELETE
 router.delete("/:id", validarOperacionEvaluacion, evaluacionesController.deleteEvaluacion);

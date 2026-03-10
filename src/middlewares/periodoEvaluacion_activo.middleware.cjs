@@ -2,12 +2,12 @@ const { getConnection } = require('../database/database.cjs')
 
 export const validarOperacionEvaluacion = async (req, res, next) => {
     try {
+        const rol = req.headers["user-rol"]
+        const metodo = req.method
 
         if (metodo === "GET") {
             return next()
         }
-        const rol = req.headers["user-rol"]
-        const metodo = req.method
 
         if (!rol) {
             return res.status(400).json({
@@ -57,7 +57,7 @@ export const validarOperacionEvaluacion = async (req, res, next) => {
 
                 const evaluacionResult = await req.db.query(`
                     SELECT estatus
-                    FROM vacaciones_syprisevaluaciones
+                    FROM vacaciones_sypris.evaluaciones
                     WHERE id_evaluacion = @id
                 `, {
                     id: evaluacionId
