@@ -7,7 +7,7 @@ const router = Router();
 // GET ALL
 router.get("/", evaluacionesController.getEvaluaciones);
 router.get("/data", evaluacionesController.getEvaluacionesData);
-router.get("/activas", evaluacionesController.getEvaluacionesActivas);
+router.get("/activas/:periodo", evaluacionesController.getEvaluacionesActivas);
 router.get("/data/:id", evaluacionesController.getEvaluacionDataporID);
 
 
