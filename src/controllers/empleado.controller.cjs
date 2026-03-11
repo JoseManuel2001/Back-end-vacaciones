@@ -15,7 +15,6 @@ const getEmpleado = async (req, res) => {
 const getOneEmpleado = async (req, res) => {
   try {
     const { trabajador } = req.params;
-    console.log("Trabajador:", trabajador);
     const pool = await getConnection();
 
     const result = await pool

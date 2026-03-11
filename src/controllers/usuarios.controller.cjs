@@ -18,7 +18,7 @@ const getOneUsuario = async (req, res) => {
     const pool = await getConnection();
     const result = await pool
       .request()
-      .input("trabajador", sql.Int, trabajador)
+      .input("trabajador", trabajador)
       .query(`SELECT * FROM vacaciones_sypris.usuario WHERE trabajador = @trabajador`);
     res.json(result.recordset);
   } catch (error) {
