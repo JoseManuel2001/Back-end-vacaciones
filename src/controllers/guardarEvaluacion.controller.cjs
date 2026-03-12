@@ -45,7 +45,7 @@ const guardarEvaluacion = async (req, res) => {
         const resultObjetivo = await new sql.Request(transaction)
           .input("id_objetivo", sql.Int, obj.id_objetivo)
           .input("id_evaluacion", sql.Int, id_evaluacion)
-          .input("objetivo", sql.VarChar(250), obj.objetivo)
+          .input("objetivo", obj.objetivo)
           .input("id_empleado", sql.NVarChar(50), obj.id_empleado)
           .query(`
         DECLARE @nuevoId TABLE (id_objetivo INT);
@@ -74,7 +74,7 @@ const guardarEvaluacion = async (req, res) => {
             .input("id_calificacion", sql.Int, obj.calificacion.id_calificacion)
             .input("id_objetivo", sql.Int, idObjetivoReal)
             .input("calificacion", sql.Int, obj.calificacion.calificacion)
-            .input("comentario", sql.VarChar(100), obj.calificacion.comentario)
+            .input("comentario", obj.calificacion.comentario)
             .input("evaluador", sql.VarChar(100), obj.calificacion.evaluador)
             .input("tipo_evaluador", sql.VarChar(30), obj.calificacion.tipo_evaluador)
             .query(`
