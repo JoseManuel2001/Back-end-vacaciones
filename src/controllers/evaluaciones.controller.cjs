@@ -26,8 +26,8 @@ const getEvaluacionesData = async (req, res) => {
                     ev.comentario_general,
                     ev.fecha_firma,
                     emp.centro_costos,
-                    emp.supervisor AS nomina_supervisor1,
-                    emp.supervisor2 AS nomina_supervisor2,
+                    emp.supervisor1_evaluacion AS nomina_supervisor1,
+                    emp.supervisor2_evaluacion AS nomina_supervisor2,
                     emp.nombre,
                     emp2.nombre AS supervisor_nombre,
                     count(ob.id_objetivo) as objetivos
@@ -35,7 +35,7 @@ const getEvaluacionesData = async (req, res) => {
                   JOIN vacaciones_sypris.empleado emp 
                     ON emp.trabajador = ev.id_empleado
                   JOIN vacaciones_sypris.empleado emp2 
-                    ON emp.supervisor = emp2.trabajador
+                    ON emp.supervisor1_evaluacion = emp2.trabajador
                   LEFT JOIN vacaciones_sypris.objetivo_evaluaciones ob 
                     ON ob.id_evaluacion = ev.id_evaluacion
                   JOIN vacaciones_sypris.periodos_evaluacion pe
@@ -50,8 +50,8 @@ const getEvaluacionesData = async (req, res) => {
                       ev.calificacion_final,
                       ev.ultima_edicion,
                       emp.centro_costos,
-                      emp.supervisor,
-                      emp.supervisor2,
+                      emp.supervisor1_evaluacion,
+                      emp.supervisor2_evaluacion,
                       emp.nombre,
                       emp2.nombre,
                       ev.fecha_firma`
@@ -81,8 +81,8 @@ const getEvaluacionDataporID = async (req, res) => {
                     ev.ultima_edicion,
                     ev.comentario_general,
                     emp.centro_costos,
-                    emp.supervisor AS nomina_supervisor1,
-                    emp.supervisor2 AS nomina_supervisor2,
+                    emp.supervisor1_evaluacion AS nomina_supervisor1,
+                    emp.supervisor2_evaluacion AS nomina_supervisor2,
                     emp.nombre,
                     emp2.nombre AS supervisor_nombre,
                     count(ob.id_objetivo) as objetivos,
@@ -91,7 +91,7 @@ const getEvaluacionDataporID = async (req, res) => {
                   JOIN vacaciones_sypris.empleado emp 
                     ON emp.trabajador = ev.id_empleado
                   JOIN vacaciones_sypris.empleado emp2 
-                    ON emp.supervisor = emp2.trabajador
+                    ON emp.supervisor1_evaluacion = emp2.trabajador
                   LEFT JOIN vacaciones_sypris.objetivo_evaluaciones ob 
                     ON ob.id_evaluacion = ev.id_evaluacion
                   JOIN vacaciones_sypris.periodos_evaluacion pe
@@ -107,8 +107,8 @@ const getEvaluacionDataporID = async (req, res) => {
                       ev.ultima_edicion,
                       ev.comentario_general,
                       emp.centro_costos,
-                      emp.supervisor,
-                      emp.supervisor2,
+                      emp.supervisor1_evaluacion,
+                      emp.supervisor2_evaluacion,
                       emp.nombre,
                       emp2.nombre,
                       ev.fecha_firma;`);
@@ -132,8 +132,8 @@ const getEvaluacionesActivas = async (req, res) => {
                     ev.ultima_edicion,
                     ev.fecha_firma,
                     emp.centro_costos,
-                    emp.supervisor AS nomina_supervisor1,
-                    emp.supervisor2 AS nomina_supervisor2,
+                    emp.supervisor1_evaluacion AS nomina_supervisor1,
+                    emp.supervisor2_evaluacion AS nomina_supervisor2,
                     emp.nombre,
                     emp2.nombre AS supervisor_nombre,
                     count(ob.id_objetivo) as objetivos
@@ -141,7 +141,7 @@ const getEvaluacionesActivas = async (req, res) => {
                   JOIN vacaciones_sypris.empleado emp 
                     ON emp.trabajador = ev.id_empleado
                   JOIN vacaciones_sypris.empleado emp2 
-                    ON emp.supervisor = emp2.trabajador
+                    ON emp.supervisor1_evaluacion = emp2.trabajador
                   LEFT JOIN vacaciones_sypris.objetivo_evaluaciones ob 
                     ON ob.id_evaluacion = ev.id_evaluacion
                   JOIN vacaciones_sypris.periodos_evaluacion pe
@@ -157,8 +157,8 @@ const getEvaluacionesActivas = async (req, res) => {
                       ev.calificacion_final,
                       ev.ultima_edicion,
                       emp.centro_costos,
-                      emp.supervisor,
-                      emp.supervisor2,
+                      emp.supervisor1_evaluacion,
+                      emp.supervisor2_evaluacion,
                       emp.nombre,
                       emp2.nombre
                   ORDER BY ev.estatus DESC, ev.fecha_firma ASC, ev.ultima_edicion DESC`
@@ -173,8 +173,8 @@ const getEvaluacionesActivas = async (req, res) => {
                     ev.ultima_edicion,
                     ev.fecha_firma,
                     emp.centro_costos,
-                    emp.supervisor AS nomina_supervisor1,
-                    emp.supervisor2 AS nomina_supervisor2,
+                    emp.supervisor1_evaluacion AS nomina_supervisor1,
+                    emp.supervisor2_evaluacion AS nomina_supervisor2,
                     emp.nombre,
                     emp2.nombre AS supervisor_nombre,
                     count(ob.id_objetivo) as objetivos
@@ -182,7 +182,7 @@ const getEvaluacionesActivas = async (req, res) => {
                   JOIN vacaciones_sypris.empleado emp 
                     ON emp.trabajador = ev.id_empleado
                   JOIN vacaciones_sypris.empleado emp2 
-                    ON emp.supervisor = emp2.trabajador
+                    ON emp.supervisor1_evaluacion = emp2.trabajador
                   LEFT JOIN vacaciones_sypris.objetivo_evaluaciones ob 
                     ON ob.id_evaluacion = ev.id_evaluacion
                   JOIN vacaciones_sypris.periodos_evaluacion pe
@@ -198,8 +198,8 @@ const getEvaluacionesActivas = async (req, res) => {
                       ev.calificacion_final,
                       ev.ultima_edicion,
                       emp.centro_costos,
-                      emp.supervisor,
-                      emp.supervisor2,
+                      emp.supervisor1_evaluacion,
+                      emp.supervisor2_evaluacion,
                       emp.nombre,
                       emp2.nombre;`
     const pool = await getConnection();
@@ -231,8 +231,8 @@ const getOneEvaluacion = async (req, res) => {
         ev.calificacion_final, 
         ev.ultima_edicion, 
         emp.centro_costos,
-        emp.supervisor AS nomina_supervisor1,
-        emp.supervisor2 AS nomina_supervisor2,
+        emp.supervisor1_evaluacion AS nomina_supervisor1,
+        emp.supervisor2_evaluacion AS nomina_supervisor2,
         emp.nombre
         FROM vacaciones_sypris.evaluaciones ev
         JOIN vacaciones_sypris.empleado emp 
