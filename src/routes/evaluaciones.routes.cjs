@@ -1,6 +1,6 @@
 const { Router } = require("express");
-const { evaluacionesController } = require("../controllers/evaluaciones.controller.cjs").methods;
-const { validarOperacionEvaluacion } = require('../middlewares/periodoEvaluacion_activo.middleware.cjs')
+const evaluacionesController = require("../controllers/evaluaciones.controller.cjs").methods;
+const validarEvaluacionesMiddleware = require('../middlewares/periodoEvaluacion_activo.middleware.cjs').methods;
 
 const router = Router();
 
@@ -15,13 +15,13 @@ router.get("/data/:id", evaluacionesController.getEvaluacionDataporID);
 router.get("/:id", evaluacionesController.getOneEvaluacion);
 
 // POST
-router.post("/", validarOperacionEvaluacion, evaluacionesController.addEvaluacion);
+router.post("/", validarEvaluacionesMiddleware.validarOperacionEvaluacion, evaluacionesController.addEvaluacion);
 
 // PUT
-router.put("/:id", validarOperacionEvaluacion, evaluacionesController.updateEvaluacion);
-router.put("/firmar/:id", validarOperacionEvaluacion, evaluacionesController.firmarEvaluacion);
+router.put("/:id", validarEvaluacionesMiddleware.validarOperacionEvaluacion, evaluacionesController.updateEvaluacion);
+router.put("/firmar/:id", validarEvaluacionesMiddleware.validarOperacionEvaluacion, evaluacionesController.firmarEvaluacion);
 
 // DELETE
-router.delete("/:id", validarOperacionEvaluacion, evaluacionesController.deleteEvaluacion);
+router.delete("/:id", validarEvaluacionesMiddleware.validarOperacionEvaluacion, evaluacionesController.deleteEvaluacion);
 
 module.exports = router;

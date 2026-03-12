@@ -1,6 +1,5 @@
 const { Router } = require("express");
 const objetivosController = require("../controllers/evaluacion_objetivos.controller.cjs").methods;
-const { validarOperacionEvaluacion } = require('../middlewares/periodoEvaluacion_activo.middleware.cjs')
 
 const router = Router();
 
@@ -9,12 +8,12 @@ router.get( "/evaluacion/:id_evaluacion",objetivosController.getObjetivosByEvalu
 
 
 // POST
-router.post("/", validarOperacionEvaluacion, objetivosController.addObjetivo);
+router.post("/", objetivosController.addObjetivo);
 
 // PUT
-router.put("/:id", validarOperacionEvaluacion, objetivosController.updateObjetivo);
+router.put("/:id", objetivosController.updateObjetivo);
 
 // DELETE
-router.delete("/:id", validarOperacionEvaluacion, objetivosController.deleteObjetivo);
+router.delete("/:id", objetivosController.deleteObjetivo);
 
 module.exports = router;
