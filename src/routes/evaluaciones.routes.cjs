@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const evaluacionesController = require("../controllers/evaluaciones.controller.cjs").methods;
+const { evaluacionesController } = require("../controllers/evaluaciones.controller.cjs").methods;
 const { validarOperacionEvaluacion } = require('../middlewares/periodoEvaluacion_activo.middleware.cjs')
 
 const router = Router();
@@ -19,7 +19,7 @@ router.post("/", validarOperacionEvaluacion, evaluacionesController.addEvaluacio
 
 // PUT
 router.put("/:id", validarOperacionEvaluacion, evaluacionesController.updateEvaluacion);
-router.put("/firmar/:id",validarOperacionEvaluacion,evaluacionesController.firmarEvaluacion);
+router.put("/firmar/:id", validarOperacionEvaluacion, evaluacionesController.firmarEvaluacion);
 
 // DELETE
 router.delete("/:id", validarOperacionEvaluacion, evaluacionesController.deleteEvaluacion);

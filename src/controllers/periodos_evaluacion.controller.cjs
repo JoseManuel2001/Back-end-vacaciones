@@ -107,7 +107,7 @@ const deletePeriodo = async (req, res) => {
   }
 };
 
-export const getPeriodoActivo = async (req, res) => {
+const getPeriodoActivo = async (req, res) => {
   try {
     const pool = await getConnection();
     const result = await pool

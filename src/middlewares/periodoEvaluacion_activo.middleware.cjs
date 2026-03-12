@@ -1,6 +1,6 @@
 const { getConnection } = require('../database/database.cjs')
 
-export const validarOperacionEvaluacion = async (req, res, next) => {
+const validarOperacionEvaluacion = async (req, res, next) => {
     try {
         const rol = req.headers["user-rol"]
         const metodo = req.method
@@ -87,3 +87,9 @@ export const validarOperacionEvaluacion = async (req, res, next) => {
         res.status(500).json({ error: error.message })
     }
 }
+
+module.exports = {
+    methods: {
+        validarOperacionEvaluacion
+    },
+};
