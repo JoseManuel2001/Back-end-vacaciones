@@ -13,6 +13,7 @@ const guardarEvaluacion = async (req, res) => {
       objetivos,
       calificacion_caracteristicas,
       objetivos_eliminados,
+      estatus_actual
     } = req.body;
 
     if (!id_evaluacion || estatus === undefined) {
@@ -36,6 +37,11 @@ const guardarEvaluacion = async (req, res) => {
             comentario_general = @comentario_general
         WHERE id_evaluacion = @id_evaluacion
       `);
+
+    if (estatus_actual == 2) {
+      await transaction.commit();
+      return res.json({ message: 'Evaluacion completada por Supervisor 2' })
+    }
 
     // 🔹 2️⃣ UPSERT objetivo (sin usar id_objetivo)
     if (objetivos?.length) {
@@ -172,17 +178,17 @@ const guardarEvaluacion = async (req, res) => {
 
     res.json({ message: "Evaluación guardada correctamente" });
   } catch (error) {
-  console.error("ERROR REAL:", error);
+    console.error("ERROR REAL:", error);
 
-  if (!transaction._aborted) {
-    await transaction.rollback();
+    if (!transaction._aborted) {
+      await transaction.rollback();
+    }
+
+    res.status(500).json({
+      message: error.message,
+      detail: error
+    });
   }
-
-  res.status(500).json({
-    message: error.message,
-    detail: error
-  });
-}
 };
 
 module.exports = {

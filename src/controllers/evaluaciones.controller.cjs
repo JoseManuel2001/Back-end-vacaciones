@@ -34,7 +34,7 @@ const getEvaluacionesData = async (req, res) => {
                   FROM vacaciones_sypris.evaluaciones ev
                   JOIN vacaciones_sypris.empleado emp 
                     ON emp.trabajador = ev.id_empleado
-                  JOIN vacaciones_sypris.empleado emp2 
+                  LEFT JOIN vacaciones_sypris.empleado emp2 
                     ON emp.supervisor1_evaluacion = emp2.trabajador
                   LEFT JOIN vacaciones_sypris.objetivo_evaluaciones ob 
                     ON ob.id_evaluacion = ev.id_evaluacion
@@ -90,7 +90,7 @@ const getEvaluacionDataporID = async (req, res) => {
                   FROM vacaciones_sypris.evaluaciones ev
                   JOIN vacaciones_sypris.empleado emp 
                     ON emp.trabajador = ev.id_empleado
-                  JOIN vacaciones_sypris.empleado emp2 
+                  LEFT JOIN vacaciones_sypris.empleado emp2 
                     ON emp.supervisor1_evaluacion = emp2.trabajador
                   LEFT JOIN vacaciones_sypris.objetivo_evaluaciones ob 
                     ON ob.id_evaluacion = ev.id_evaluacion
@@ -140,7 +140,7 @@ const getEvaluacionesActivas = async (req, res) => {
                   FROM vacaciones_sypris.evaluaciones ev
                   JOIN vacaciones_sypris.empleado emp 
                     ON emp.trabajador = ev.id_empleado
-                  JOIN vacaciones_sypris.empleado emp2 
+                  LEFT JOIN vacaciones_sypris.empleado emp2 
                     ON emp.supervisor1_evaluacion = emp2.trabajador
                   LEFT JOIN vacaciones_sypris.objetivo_evaluaciones ob 
                     ON ob.id_evaluacion = ev.id_evaluacion
@@ -181,7 +181,7 @@ const getEvaluacionesActivas = async (req, res) => {
                   FROM vacaciones_sypris.evaluaciones ev
                   JOIN vacaciones_sypris.empleado emp 
                     ON emp.trabajador = ev.id_empleado
-                  JOIN vacaciones_sypris.empleado emp2 
+                  LEFT JOIN vacaciones_sypris.empleado emp2 
                     ON emp.supervisor1_evaluacion = emp2.trabajador
                   LEFT JOIN vacaciones_sypris.objetivo_evaluaciones ob 
                     ON ob.id_evaluacion = ev.id_evaluacion
