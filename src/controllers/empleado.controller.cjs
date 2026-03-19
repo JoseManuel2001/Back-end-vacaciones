@@ -32,6 +32,39 @@ const getOneEmpleado = async (req, res) => {
   }
 };
 
+const getEmpleadosById = async (req, res) => {
+  try {
+    const { empleados } = req.body;
+
+    if (!Array.isArray(empleados)) {
+      return res.status(400).json({
+        message: "El campo 'empleados' debe ser un arreglo"
+      });
+    }
+
+    const pool = await getConnection();
+    const request = pool.request()
+
+    const params = empleados.map((id, index) => {
+      const paramName = `id${index}`;
+      request.input(paramName, id);
+      return `@${paramName}`;
+    });
+
+    const query = `
+      SELECT * 
+      FROM vacaciones_sypris.empleado 
+      WHERE trabajador IN (${params.join(",")})
+    `;
+
+    const result = await request.query(query);
+
+    res.json(result.recordset);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+};
+
 const getOneSupervisor = async (req, res) => {
   try {
     const { trabajador } = req.params;
@@ -176,5 +209,6 @@ module.exports = {
     deleteEmpleado,
     updateEmpleado,
     getOneSupervisor,
+    getEmpleadosById
   },
 };

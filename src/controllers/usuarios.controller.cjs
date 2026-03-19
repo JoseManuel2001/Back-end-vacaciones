@@ -26,6 +26,39 @@ const getOneUsuario = async (req, res) => {
   }
 };
 
+const getUsuariosById = async (req, res) => {
+  try {
+    const { trabajadores } = req.body;
+
+    if (!Array.isArray(trabajadores)) {
+      return res.status(400).json({
+        message: "El campo 'trabajadores' debe ser un arreglo"
+      });
+    }
+
+    const pool = await getConnection();
+    const request = pool.request()
+
+    const params = trabajadores.map((id, index) => {
+      const paramName = `id${index}`;
+      request.input(paramName, id);
+      return `@${paramName}`;
+    });
+
+    const query = `
+      SELECT * 
+      FROM vacaciones_sypris.usuario 
+      WHERE trabajador IN (${params.join(",")})
+    `;
+
+    const result = await request.query(query);
+
+    res.json(result.recordset);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+};
+
 const addUsuario = async (req, res) => {
   try {
     const {
@@ -70,7 +103,7 @@ const deleteUsuario = async (req, res) => {
     const { id } = req.params;
     const connection = await getConnection();
     const result = await connection.query(
-      "DELETE FROM usuario WHERE id_user = ?", 
+      "DELETE FROM usuario WHERE id_user = ?",
       id
     );
     res.json(result);
@@ -227,5 +260,6 @@ module.exports = {
     updatePassword,
     getPassword,
     getUsuariosRH,
+    getUsuariosById
   },
 };

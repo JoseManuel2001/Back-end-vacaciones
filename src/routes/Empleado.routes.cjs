@@ -11,6 +11,7 @@ router.get("/supervisor/:trabajador", empleadoController.getOneSupervisor);
 
 //POST
 router.post("/", empleadoController.addEmpleado);
+router.post("/in-employees/", empleadoController.getEmpleadosById);
 
 //PUT
 router.put("/:id", empleadoController.updateEmpleado);

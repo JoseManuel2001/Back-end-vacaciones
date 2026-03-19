@@ -12,6 +12,7 @@ router.get("/rh/lista", usuarioController.getUsuariosRH);
 
 //POST
 router.post("/", usuarioController.addUsuario);
+router.post("in-users/", usuarioController.getUsuariosById);
 
 //PUT
 router.put("/:id", usuarioController.updateUsuario);
