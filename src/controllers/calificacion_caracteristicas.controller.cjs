@@ -86,6 +86,35 @@ const getCalificacionCractxid = async (req, res) => {
   }
 };
 
+const getCalificacionesByPeriod = async (req, res) => {
+  try {
+    const { periodo } = req.params;
+
+    const pool = await getConnection();
+
+    const result = await pool.request().input("periodo", periodo).query(`
+        SELECT cc.id_calificacion, cc.id_empleado, cc.calificacion, cc.tipo_evaluador
+        FROM vacaciones_sypris.calificacion_caracteristica cc
+        JOIN vacaciones_sypris.evaluaciones ev ON cc.id_evaluacion = ev.id_evaluacion
+        WHERE ev.periodo = @periodo;
+
+        SELECT cc.id_calificacion, cc.calificacion, cc.tipo_evaluador, oe.id_empleado
+        FROM vacaciones_sypris.calificacion_objetivo cc
+        JOIN vacaciones_sypris.objetivo_evaluaciones oe ON cc.id_objetivo = oe.id_objetivo
+        JOIN vacaciones_sypris.evaluaciones ev ON oe.id_evaluacion = ev.id_evaluacion
+        WHERE ev.periodo = @periodo;
+      `);
+
+    res.json({
+      caracteristicas: result.recordsets[0],
+      objetivos: result.recordsets[1],
+    });
+  } catch (error) {
+    console.error("Error en getCalificacionesByPeriod:", error);
+    res.status(500).send(error.message);
+  }
+};
+
 const addCalificacionCaracteristica = async (req, res) => {
   try {
     const { id_caracteristica, id_evaluacion, id_empleado, calificacion, evaluador, tipo_evaluador, fecha_evaluacion } = req.body;
@@ -177,5 +206,6 @@ module.exports = {
     updateCalificacionCaracteristica,
     deleteCalificacionCaracteristica,
     getCalificacionCractxid,
+    getCalificacionesByPeriod
   },
 };

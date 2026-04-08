@@ -13,7 +13,9 @@ const guardarEvaluacion = async (req, res) => {
       objetivos,
       calificacion_caracteristicas,
       objetivos_eliminados,
-      estatus_actual
+      estatus_actual,
+      calificacion_carac,
+      calificacion_objs,
     } = req.body;
 
     if (!id_evaluacion || estatus === undefined) {
@@ -27,18 +29,22 @@ const guardarEvaluacion = async (req, res) => {
       .input("id_evaluacion", id_evaluacion)
       .input("estatus", estatus)
       .input("calificacion_final", calificacion_final)
+      .input("calificacion_carac", calificacion_carac || 0)
+      .input("calificacion_objs", calificacion_objs || 0)
       .input("ultima_edicion", new Date())
       .input("comentario_general", comentario_general)
       .query(`
         UPDATE vacaciones_sypris.evaluaciones
         SET estatus = @estatus,
             calificacion_final = @calificacion_final,
+            calificacion_carac = @calificacion_carac,
+            calificacion_objs = @calificacion_objs,
             ultima_edicion = @ultima_edicion,
             comentario_general = @comentario_general
         WHERE id_evaluacion = @id_evaluacion
       `);
 
-    if (estatus_actual == 2) {
+    if (estatus_actual == 2 || estatus_actual == 3) {
       await transaction.commit();
       return res.json({ message: 'Evaluacion completada por Supervisor 2' })
     }
